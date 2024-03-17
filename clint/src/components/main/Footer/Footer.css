@@ -1,0 +1,63 @@
+.footerParent{
+    width: 100%;
+    height: 30pc;
+    /* border: 2px solid black; */
+    background-color: black;
+    color: white;
+}
+.footerSubParent{
+    /* border: 2px solid red; */
+    height: 25pc;
+}
+.footerRow{
+    /* border: 2px solid yellow; */
+    height: 24pc;
+}
+.footerAllCol{
+    /* border: 1px solid green; */
+}
+.footersocalmeida_icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.footersocalmeida_icon span{
+    font-size: 3rem;
+
+}
+.footerInput{
+    width: 10pc;
+    height: 35px;
+}
+.footerh2{
+    font-size: 30px;
+    font-family: auto;
+    font-weight: bold;
+}
+
+/* responsive */
+@media screen and (max-width: 360px) {
+    .footerParent{
+        /* background-color: red; */
+        height: 74pc;
+    }
+    .footerRow{
+        /* background-color: red; */
+        height: 68pc;
+    }
+    .footerSubParent{
+        /* background-color: red; */
+        height: 68pc;
+    }
+}
+@media screen and (max-width: 425px){
+ .footerParent{
+    height: 70pc;
+ }
+}
+@media screen and (max-width: 768px){
+    .footerParent{
+        border: 2px solid red;
+        height: 72pc;
+    }
+}

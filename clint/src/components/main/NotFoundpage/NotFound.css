@@ -1,0 +1,9 @@
+.not_found_css{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 6rem;
+    font-weight: bold;
+
+}

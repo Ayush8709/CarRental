@@ -1,0 +1,62 @@
+.fourstep_post{
+    color: red;
+    font-weight: bolder;
+}
+
+.fourstepmaincontainer{
+   background-color: wheat;
+   height: 400px;
+}
+.fourstepmaincontainer_sub{
+    margin-left: 30px;
+}
+.foruStep_Card{
+    border: 2px solid yellowgreen;
+    width: 66%;
+    height: 97px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.foruStep_Card:hover{
+    border: 3px solid red;
+    background-color: black;
+    color: white;
+}
+.fourStepCarPara{
+    font-size: 19px;
+    font-weight: bolder;
+    text-transform: capitalize;
+    margin-top: 7px;
+}
+.fourStepCarPara:hover{
+    font-size: 25px;
+    color: blue;
+    text-transform: uppercase;
+}
+
+/* mobile responsve */
+@media screen and (max-width: 587px){
+    .fourstepmaincontainer{
+        background-color: wheat;
+        height: 830px;
+     }
+     .foruStep_Card{
+       margin-left: 40px;
+    }
+    .foursStep_Card_parent{
+        margin-left: -23px;
+       
+     }
+     .fourStepCarPara{
+        text-align: center;
+     }
+   
+@media screen and (max-width: 390px){
+       
+     .fourStepCarPara{
+        text-align: center;
+        font-size: 13px;
+     }
+   
+}

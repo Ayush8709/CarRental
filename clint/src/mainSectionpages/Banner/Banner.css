@@ -1,0 +1,79 @@
+  .banner_background::before {
+    background-image: url(../../../public/images/firstposter.jpeg);
+    background-size: cover;
+    background-position: center;
+    content: ' ';
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.9;
+
+  }
+
+  .banner_background {
+    /* height: 80vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 80px;
+    height: 500px;
+    position: relative;
+  }
+
+  .banner_background_text {
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+  }
+
+
+  .banner_post {
+    color: yellow;
+    z-index: 999;
+    font-weight: 500;
+    font-size: 26px;
+    word-spacing: 5px;
+    text-transform: uppercase;
+  }
+
+  .banner_heading {
+    z-index: 999;
+    font-size: 5em;
+    text-transform: capitalize;
+  }
+
+  .banenr-para {
+    z-index: 999;
+    font-size: 20px;
+  }
+
+  /* mobile Responsive */
+
+  @media screen and (max-width: 992px) {
+    .banner_background {
+      background-image: url(../../../public/images/firstposter.jpeg);
+      background-position: center;
+      background-size: cover;
+      line-height: 30px;
+    }
+    .banner_post{
+      font-size: 23px;
+      position: relative;
+      bottom: 15px;
+      font-weight: bolder;
+    }
+
+    .banner_heading {
+      font-size: 44px;
+      font-weight: bolder;
+      width: 100%;
+    }
+    .banenr-para {
+      color: rgb(173, 248, 87);
+      font-size: 11px;
+    }
+
+  }

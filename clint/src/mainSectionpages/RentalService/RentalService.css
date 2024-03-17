@@ -1,0 +1,143 @@
+.rentalserviceParent{
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 37pc;
+    /* max-height: 38pc; */
+}
+.rentalserviceFirstRow{
+    /* border: 1px solid red; */
+    height: 33pc;
+   
+}
+.rentalserviceFirstCol{
+    /* border: 1px solid gray; */
+    /* background-color: red; */
+}
+.rentalserviceFirstCol_image{
+    width: 100%;
+    height: -webkit-fill-available;;
+}
+.rentalserviceSecountCol{
+    /* border: 1px solid green; */
+}
+
+/* secound coloum section */
+.rentalserviceSecountCol_first_span{
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: yellowgreen;
+}
+
+.rentalserviceSecountCol_first_heading{
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: auto;
+    font-size: 3.2rem;
+}
+.rentalserviceSecountCol_first_paragraph{
+
+}
+
+.rentalserviceSecountCol_secound_row{
+    /* border: 2px solid black; */
+    margin-top: 2px;
+}
+.rentalserviceSecountCol_secound_row_logo{
+    color: yellowgreen;
+    font-size: 40px;
+}
+.rentalserviceSecountCol_secound_row_h1{
+    display: inline;
+    font-size: 27px;
+}
+.rentalserviceSecountCol_secound_row_p{
+    color: rgb(20, 221, 228);
+    font-family: emoji;
+    margin-left: 54px;
+    line-height: 17px;
+}
+
+
+
+
+
+
+
+
+
+
+/* responsive */
+
+@media screen and (max-width: 360px){
+    .rentalserviceParent{
+        height: 78pc;
+        /* background-color: red; */
+          }
+        .rentalserviceFirstRow{
+            /* background-color: red; */
+            height: 74pc;
+        }  
+        .rentalserviceFirstCol_image{
+            width: 100%;
+            height: 25pc;
+            border-radius: 15px;
+        }
+    .rentalserviceSecountCol_first_heading{
+        color: red;
+        font-size: 1.5rem;
+    }
+
+}
+@media screen and (max-width:375px) {
+    .rentalserviceParent{
+        height: 78pc;
+        /* background-color: red; */
+          }
+        .rentalserviceFirstRow{
+            /* background-color: red; */
+            height: 74pc;
+        }  
+}
+
+@media screen and (max-width:425px) {
+    .rentalserviceParent{
+        height: 78pc;
+        /* background-color: red; */
+          }
+        .rentalserviceFirstRow{
+            /* background-color: red; */
+            height: 74pc;
+        }  
+}
+
+@media screen and (max-width:778px) {
+    .rentalserviceParent{
+        height: 78pc;
+        /* background-color: red; */
+          }
+        .rentalserviceFirstRow{
+            /* background-color: red; */
+            height: 74pc;
+        }  
+        .rentalserviceFirstCol_image{
+            
+        }
+}
+
+@media screen and (max-width:1024px) {
+    .rentalserviceParent{
+        height: 78pc;
+        /* background-color: red; */
+          }
+        .rentalserviceFirstRow{
+            /* background-color: red; */
+            height: 74pc;
+        }  
+}
+
+
+
+
+
+
+

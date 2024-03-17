@@ -1,0 +1,54 @@
+.manparentcontactUs::before{
+    background-image: url('../.././public/images/contactus.jpg');
+    background-size: cover;
+    background-position: center;
+    content: ' ';
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+}
+.manparentcontactUs{
+    /* border: 2px solid black; */
+    width: 100%;
+    height: 22pc;
+    
+    position: relative;
+    z-index: 99;
+}
+.contactus_details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactus_heading{
+    font-size: 6rem;
+    color: white;
+    font-weight: bolder;
+    font-family: system-ui;
+    padding-top: 73px;
+    text-align: center;
+}
+.contactUs_form_area{
+    border: 2px solid black;
+}
+.contactUs_col_area{
+    border: 2px solid green;
+}
+
+
+
+
+/* //responsive */
+
+@media screen and (max-width: 360px) {
+    .contactus_heading{
+        font-size: 4rem;
+        text-align: center;
+        padding-top: 65px;
+    }
+}
