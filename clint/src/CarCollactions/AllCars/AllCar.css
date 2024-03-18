@@ -1,0 +1,91 @@
+.parent {
+
+}
+
+.carChild {
+    /* border: 2px solid black; */
+}
+
+.AllCarsCard {
+    /* border: 2px solid yellowgreen; */
+
+    /* box-shadow: 0px 1px 11px 5px black; */
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    margin: 1px 0px;
+}
+
+.AllCarsCard:hover {
+    box-shadow: 0px 1px 11px 5px black;
+
+}
+
+.AllCars_nameSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.AllCars_nameSection h1 {
+    display: inline;
+}
+
+.AllCars_Price {
+
+}
+
+.AllCars_Price h2 {
+    display: inline;
+}
+
+.AllCars_Price span {
+    color: darkgray;
+}
+
+.AllCars_Price p {
+    display: inline;
+    float: right;
+    font-size: 19px;
+    font-family: auto;
+}
+
+.AllCars_Model {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.AllCars_Model p {
+    display: inline;
+    font-size: 19px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.AllCars_Model span {
+    display: inline;
+    font-size: 17px;
+    font-family: auto;
+}
+
+.AllCars_FuelType {}
+
+.AllCars_FuelType p {
+    display: inline;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.AllCars_FuelType span {
+    float: right;
+    font-size: 17px;
+    font-family: auto;
+}
+
+.AllCarButton {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}

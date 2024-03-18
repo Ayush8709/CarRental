@@ -45,7 +45,7 @@ const Navbar = () => {
             <li><hr className="dropdown-divider" /></li>
             <li><Link className="dropdown-item navbar_link_gsap"style={myStyle} to="/toyto">Toyto</Link></li>
             <li><hr className="dropdown-divider" /></li>
-            <li><Link className="dropdown-item navbar_link_gsap"style={myStyle} to="cars">All Cars</Link></li>
+            <li><Link className="dropdown-item navbar_link_gsap"style={myStyle} to="/cars">All Cars</Link></li>
           </ul>
         </li>
         <li className="nav-item">

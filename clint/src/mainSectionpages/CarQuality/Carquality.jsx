@@ -37,12 +37,12 @@ const Carquality = () => {
 
                                 <p>
                                     
-                                    <button class="btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                    <button className="btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                                         Read MORE ->
                                     </button>
                                 </p>
-                                <div class="collapse" id="collapseExample">
-                                    <div class="card card-body">
+                                <div className="collapse" id="collapseExample">
+                                    <div className="card card-body">
                                     Our diverse fleet features a wide range of meticulously maintained vehicles, including economy cars, spacious SUVs, sleek sedans, and luxury models. Each vehicle is handpicked to meet the highest standards of performance, comfort, and style.
                                     </div>
                                 </div>

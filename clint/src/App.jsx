@@ -6,6 +6,8 @@ import Main from './components/main/MainSection/main'
 import NotFoundPage from './components/main/NotFoundpage/NotFound'
 import About from './components/main/AboutSection/About'
 import ContactUs from './ContactusPges/ContactUs'
+import AllCars from './CarCollactions/AllCars/AllCars'
+import Mahindra from './CarCollactions/Mahindra/Mahindra'
 
 const App = () => {
   return (
@@ -16,6 +18,8 @@ const App = () => {
           <Route path='/' element={<Main />} exact />
           <Route path='/about' element={<About />} exact />
           <Route path='/contact' element={<ContactUs />} />
+          <Route path='/cars' element={<AllCars />} />
+          <Route path='/mahindra' element={<Mahindra />} />
 
 
          //This is default Routes
