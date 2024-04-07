@@ -8,7 +8,7 @@ import axios from 'axios'
 gsap.registerPlugin(ScrollTrigger)
 
 
-const Mahindra = () => {
+const Tata = () => {
 
 
 
@@ -17,7 +17,7 @@ const Mahindra = () => {
     //Fetch all Car Api with backend
     const myCarApi = async () => {
         try {
-            const myCarApiDetail = await axios.get('http://localhost:8000/api/v1/cardata/mahindradata')
+            const myCarApiDetail = await axios.get('http://localhost:8000/api/v1/cardata/tatadata')
             setCarApi(myCarApiDetail.data)
             //   console.log(carApi);
         } catch (error) {
@@ -97,4 +97,4 @@ const Mahindra = () => {
     )
 }
 
-export default Mahindra
+export default Tata

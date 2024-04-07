@@ -1,7 +1,8 @@
-import express from 'express'
 import User from '../models/userModel.js'
 import bcrypt from 'bcryptjs'
 import JWT from 'jsonwebtoken'
+
+//jwt create jwt token
 const JWT_KEY = "ayushsingh"
 
 //Register auth
@@ -46,7 +47,8 @@ const registerController =async ( req, res) =>{
             success: true,
             message:"SuccessFully Register ",
             user
-        })       
+        })  
+             
     } catch (error) {
         console.log(error);
         res.status(500).send({

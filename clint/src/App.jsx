@@ -8,6 +8,7 @@ import About from './components/main/AboutSection/About'
 import ContactUs from './ContactusPges/ContactUs'
 import AllCars from './CarCollactions/AllCars/AllCars'
 import Mahindra from './CarCollactions/Mahindra/Mahindra'
+import Tata from './CarCollactions/Tata/Tata'
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
           <Route path='/contact' element={<ContactUs />} />
           <Route path='/cars' element={<AllCars />} />
           <Route path='/mahindra' element={<Mahindra />} />
+          <Route path='/tata' element={<Tata />} />
 
 
          //This is default Routes

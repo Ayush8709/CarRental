@@ -18,9 +18,16 @@ myDb();
 import register from './routes/authRoutes.js'
 app.use('/api/v1/auth',register)
 
+
 //send All Car_Data_Api
 import carApi from './routes/carDataRoutes.js';
 app.use('/api/v1/cardata',carApi)
+
+
+//ContactUs Route
+import ContactUs from './routes/contactRoutes.js'
+app.use('/api/v1/contact', ContactUs)
+
 
 //Default route
 app.get('/',(req, res)=>{
