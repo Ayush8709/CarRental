@@ -1,16 +1,65 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './AllCar.css'
 // CarApiCall
 import data from '../../../data.js'
+import gsap from 'gsap'
+import { useGSAP } from '@gsap/react'
+import axios from 'axios'
+gsap.registerPlugin(ScrollTrigger)
+
 
 const AllCars = () => {
+
+
+
+    const [carApi, setCarApi] = useState([]);
+
+    //Fetch all Car Api with backend
+    const myCarApi = async () => {
+        try {
+            const myCarApiDetail = await axios.get('http://localhost:8000/api/v1/cardata/data')
+            setCarApi(myCarApiDetail.data)
+            //   console.log(carApi);
+        } catch (error) {
+            console.log("All Car Api Not Found");
+        }
+    }
+
+    useEffect(() => {
+        myCarApi()
+
+        gsap.from('.dardImage', {
+            scale: 0.8,
+            scrollTrigger: {
+                trigger: "dardImage",
+                scrub: 2
+            }
+        })
+    })
+
+
+
+    useGSAP(() => {
+
+        gsap.from('.dardImage', {
+            scale: 0.8,
+            scrollTrigger: {
+                trigger: "dardImage",
+                scrub: 2
+            }
+        })
+
+
+    })
+
+
     return (
         <>
             <div className="container-fluid parent mt-5">
                 <div className="container carChild">
                     <div className="row mt-5">
                         {
-                            data.map((value, id) => {
+                            carApi.map((value, id) => {
                                 return (
 
                                     <div className="col-sm-4 AllCarsCard" key={id}>

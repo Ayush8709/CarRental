@@ -38,7 +38,7 @@ const main = () => {
                             <span className='banner_post animation '>Rent cars</span>
                             <h1 className='banner_heading'><strong> Easily For You To Rent a Car</strong></h1>
                             <p className='banenr-para'><strong> Get access to rent our luxury cars for your premium events at affordable prices.</strong></p>
-                            <button className='btn btn-danger  mt-5 '> <span id='arrow' className='arrow'>-></span> GET STARTED</button>
+                            <button className='btn btn-danger  mt-5 '> <span id='arrow' className='arrow'>{"->"}</span> GET STARTED</button>
                          
                         </div>
                     </div>
