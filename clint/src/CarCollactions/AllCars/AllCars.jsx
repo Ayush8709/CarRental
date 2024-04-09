@@ -2,10 +2,8 @@ import React, { useEffect, useState } from 'react'
 import './AllCar.css'
 // CarApiCall
 import data from '../../../data.js'
-import gsap from 'gsap'
-import { useGSAP } from '@gsap/react'
 import axios from 'axios'
-gsap.registerPlugin(ScrollTrigger)
+import { Link } from 'react-router-dom'
 
 
 const AllCars = () => {
@@ -28,29 +26,12 @@ const AllCars = () => {
     useEffect(() => {
         myCarApi()
 
-        gsap.from('.dardImage', {
-            scale: 0.8,
-            scrollTrigger: {
-                trigger: "dardImage",
-                scrub: 2
-            }
-        })
+       
     })
 
 
 
-    useGSAP(() => {
-
-        gsap.from('.dardImage', {
-            scale: 0.8,
-            scrollTrigger: {
-                trigger: "dardImage",
-                scrub: 2
-            }
-        })
-
-
-    })
+  
 
 
     return (
@@ -63,7 +44,7 @@ const AllCars = () => {
                                 return (
 
                                     <div className="col-sm-4 AllCarsCard" key={id}>
-                                        <img src={value.image} className='dardImage mt-3' alt="" width="100%" />
+                                        {/* <img src={value.image} className='dardImage mt-3' alt="" width="100%" />
                                         <hr />
                                         <div className="AllCars_nameSection">
                                             <h1 className='text-success'>{value.name}</h1> <span>{value.category.rating} ****</span>
@@ -78,8 +59,26 @@ const AllCars = () => {
                                             <p>Company: {value.category.brand}</p> <span>FuelType: {value.fueltype}</span>
                                         </div>
                                         <div className="div AllCarButton mt-3">
-                                            <button className='btn btn-lg btn-success'>CheckOut</button>
 
+                                            <Link to='/checkout' > <button className='btn btn-lg btn-success'>CheckOut</button></Link>
+                                        </div> */}
+
+
+
+                                        <div className="card pt-2" style={{width:"22rem", border:"none"}} >
+                                            <img src={value.image}  className="card-img-top" alt="..." />
+                                                <div className="card-body">
+                                                    <h5 className="card-title"><h2>{value.name}</h2></h5>
+                                                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                </div>
+                                                <ul className="list-group list-group-flush">
+                                                    <li className="list-group-item">Price : {value.price}/day</li>
+                                                    <li className="list-group-item">Mode :  {value.model}</li>
+                                                    <li className="list-group-item">Company: {value.category.brand}</li>
+                                                </ul>
+                                                <div className="card-body">
+                                                <Link to={`/checkout/${value.id}`} > <button className='btn btn-md btn-danger'>CheckOut</button></Link>
+                                                </div>
                                         </div>
                                     </div>
 

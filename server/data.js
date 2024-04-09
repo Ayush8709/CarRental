@@ -3,7 +3,7 @@ const myCarRentApi = [
     {
         id: 1,
         name: "Scorpio",
-        image: './public/dataImg/mahindraScorpio.jpg',
+        image: 'https://imgd.aeplcdn.com/664x374/n/cw/ec/128413/scorpio-exterior-right-front-three-quarter-47.jpeg?isig=0&q=80',
         sheet: 6,
         lagguage: "50kg",
         price: 2000,
@@ -18,7 +18,7 @@ const myCarRentApi = [
     {
         id: 2,
         name: "XUV500",
-        image: './public/dataImg/mahindraScoppioSuv500.jpg',
+        image: 'https://imgd.aeplcdn.com/664x374/n/cw/ec/42355/xuv700-exterior-right-front-three-quarter-3.jpeg?isig=0&q=80',
         sheet: 8,
         lagguage: "70kg",
         price: 2500,
@@ -34,7 +34,7 @@ const myCarRentApi = [
     {
         id: 3,
         name: "XUV700",
-        image: './public/dataImg/mahindrasuv700.jpg',
+        image: 'https://imgd.aeplcdn.com/664x374/n/cw/ec/42355/xuv700-exterior-right-front-three-quarter-3.jpeg?isig=0&q=80',
         sheet: 8,
         lagguage: "70kg",
         price: 2500,
@@ -49,7 +49,7 @@ const myCarRentApi = [
     {
         id: 4,
         name: "Thar",
-        image: './public/dataImg/MahindraThar.jpg',
+        image: 'https://imgd.aeplcdn.com/664x374/n/cw/ec/40087/thar-exterior-right-front-three-quarter-35.jpeg?isig=0&q=80',
         sheet: 4,
         lagguage: "80kg",
         price: 3000,
@@ -64,7 +64,7 @@ const myCarRentApi = [
     {
         id: 5,
         name: "Scorpio-N",
-        image: './public/dataImg/MahindraScorpop_N.jpg',
+        image: 'https://imgd.aeplcdn.com/664x374/n/cw/ec/40432/scorpio-n-exterior-right-front-three-quarter-75.jpeg?isig=0&q=80',
         sheet: 8,
         lagguage: "50kg",
         price: 3500,
@@ -79,7 +79,7 @@ const myCarRentApi = [
     {
         id: 6,
         name: "XUV300",
-        image: './public/dataImg/MahindraSuv300.jpg',
+        image: 'https://imgd.aeplcdn.com/664x374/n/cw/ec/26918/xuv300-exterior-right-front-three-quarter-148709.jpeg?isig=0&q=80',
         sheet: 8,
         lagguage: "50kg",
         price: 3000,
@@ -95,7 +95,7 @@ const myCarRentApi = [
     {
         id: 7,
         name: "Bolero",
-        image: './public/dataImg/MahindraBolouro.jpg',
+        image: 'https://imgd.aeplcdn.com/664x374/n/cw/ec/131179/bolero-exterior-right-front-three-quarter-2.jpeg?isig=0&q=80',
         sheet: 8,
         lagguage: "50kg",
         price: 2500,
@@ -112,7 +112,7 @@ const myCarRentApi = [
     {
         id: 8,
         name: "Swift",
-        image: './public/dataImg/SuzikiShift.jpg',
+        image: 'https://imgd.aeplcdn.com/664x374/n/cw/ec/54399/swift-exterior-right-front-three-quarter-64.jpeg?isig=0&q=80',
         sheet: 4,
         lagguage: "20kg",
         price: 2000,
@@ -127,7 +127,7 @@ const myCarRentApi = [
     {
         id: 9,
         name: "Brezza",
-        image: './public/dataImg/SuzikiBrazza.jpg',
+        image: 'https://imgd.aeplcdn.com/664x374/n/cw/ec/107543/brezza-exterior-right-front-three-quarter-7.jpeg?isig=0&q=80',
         sheet: 6,
         lagguage: "25kg",
         price: 2200,
@@ -143,7 +143,7 @@ const myCarRentApi = [
     {
         id: 10,
         name: "Ertiga",
-        image: './public/dataImg/SuzikiErtiga.jpg',
+        image: 'https://imgd.aeplcdn.com/664x374/n/cw/ec/115777/ertiga-exterior-right-front-three-quarter-5.jpeg?isig=0&q=80',
         sheet: 8,
         lagguage: "25kg",
         price: 3300,
@@ -159,7 +159,7 @@ const myCarRentApi = [
     {
         id: 11,
         name: "Baleno",
-        image: './public/dataImg/SuzikiBollono.jpg',
+        image: 'https://imgd.aeplcdn.com/664x374/n/cw/ec/102663/baleno-exterior-right-front-three-quarter-66.jpeg?isig=0&q=80',
         sheet: 6,
         lagguage: "20kg",
         price: 2500,
@@ -174,7 +174,7 @@ const myCarRentApi = [
     {
         id: 12,
         name: "Dzire",
-        image: './public/dataImg/SuzikiDziere.jpg',
+        image: 'https://imgd.aeplcdn.com/664x374/n/cw/ec/45691/dzire-exterior-right-front-three-quarter-3.jpeg?isig=0&q=80',
         sheet: 4,
         lagguage: "20kg",
         price: 2000,
@@ -189,7 +189,7 @@ const myCarRentApi = [
     {
         id: 13,
         name: "Wagnon-R",
-        image: './public/dataImg/SuzikiWagnor.jpg',
+        image: 'https://imgd.aeplcdn.com/664x374/n/cw/ec/112947/wagon-r-2022-exterior-right-front-three-quarter-3.jpeg?isig=0&q=80',
         sheet: 4,
         lagguage: "10kg",
         price: 2000,
@@ -204,7 +204,7 @@ const myCarRentApi = [
     {
         id: 14,
         name: "Alto-K10",
-        image: './public/dataImg/SuzikiAultoK10.jpg',
+        image: 'https://imgd.aeplcdn.com/370x208/n/cw/ec/127563/alto-k10-exterior-right-front-three-quarter-58.jpeg?isig=0&q=80',
         sheet: 4,
         lagguage: "0kg",
         price: 2200,
@@ -220,7 +220,7 @@ const myCarRentApi = [
     {
         id: 15,
         name: "Nexon",
-        image: './public/dataImg/TataNexon.jpg',
+        image: 'https://imgd.aeplcdn.com/664x374/n/cw/ec/141867/nexon-exterior-right-front-three-quarter-71.jpeg?isig=0&q=80',
         sheet: 6,
         lagguage: "20kg",
         price: 3000,
@@ -235,7 +235,7 @@ const myCarRentApi = [
     {
         id: 16,
         name: "Punch",
-        image: './public/dataImg/TataPunch.jpg',
+        image: 'https://imgd.aeplcdn.com/664x374/n/cw/ec/39015/punch-exterior-right-front-three-quarter-54.jpeg?isig=0&q=80',
         sheet: 4,
         lagguage: "12kg",
         price: 2700,
@@ -251,7 +251,7 @@ const myCarRentApi = [
     {
         id: 17,
         name: "Harrier",
-        image: './public/dataImg/TataHarrier.jpg',
+        image: 'https://imgd.aeplcdn.com/664x374/n/cw/ec/139139/harrier-facelift-exterior-right-front-three-quarter-5.jpeg?isig=0&q=80',
         sheet: 4,
         lagguage: "25kg",
         price: 4500,
@@ -266,7 +266,7 @@ const myCarRentApi = [
     {
         id: 18,
         name: "Safari",
-        image: './public/dataImg/TataSafari.jpg',
+        image: 'https://imgd.aeplcdn.com/664x374/n/cw/ec/138895/safari-facelift-exterior-right-front-three-quarter-39.jpeg?isig=0&q=80',
         sheet: 8,
         lagguage: "25kg",
         price: 5000,
@@ -281,7 +281,7 @@ const myCarRentApi = [
     {
         id: 19,
         name: "Nexon-EV",
-        image: './public/dataImg/TataNexon_Ev.jpg',
+        image: 'https://imgd.aeplcdn.com/370x208/n/cw/ec/141867/nexon-exterior-right-front-three-quarter-71.jpeg?isig=0&q=80',
         sheet: 8,
         lagguage: "25kg",
         price: 5000,
@@ -297,4 +297,4 @@ const myCarRentApi = [
 
 ]
 
-export default myCarRentApi;
+export default  myCarRentApi;

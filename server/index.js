@@ -14,6 +14,11 @@ app.use(cors())
 import myDb from './config/Db.js';
 myDb();
 
+//save all carData Api in mongodb 
+import saveAllApiMongodb from './routes/mainCarSaveApi.js'
+app.use('/api/v1/savealldata', saveAllApiMongodb)
+
+
 //userLogin and Signup Routes
 import register from './routes/authRoutes.js'
 app.use('/api/v1/auth',register)

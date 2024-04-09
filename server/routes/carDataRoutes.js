@@ -1,10 +1,13 @@
 import express from 'express'
 const router = express.Router()
-import { carDataApi, mahindraCarApi , marutiSuzikiApi, tataCarApi } from '../controllers/carApiController.js';
+import { carDataApi, carDataWithId , mahindraCarApi , marutiSuzikiApi, tataCarApi } from '../controllers/carApiController.js';
 
 
 //Send all Car Data Api
 router.get('/data', carDataApi);
+
+//Send Car Data with particular id
+router.get('/cardetail/:id', carDataWithId)
 
 
 //Send only Mahindra Car Data 
