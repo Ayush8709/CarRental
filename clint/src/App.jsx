@@ -9,7 +9,8 @@ import ContactUs from './ContactusPges/ContactUs'
 import AllCars from './CarCollactions/AllCars/AllCars'
 import Mahindra from './CarCollactions/Mahindra/Mahindra'
 import Tata from './CarCollactions/Tata/Tata'
-
+import SignUp from './components/main/SignUp/SignUp'
+import Login from './components/main/Login/Login'
 import CarChekoutPage from './CarCollactions/CarChekOut/ChekOut'
 
 const App = () => {
@@ -25,6 +26,8 @@ const App = () => {
           <Route path='/mahindra' element={<Mahindra />} />
           <Route path='/tata' element={<Tata />} />
           <Route path='/checkout/:id' element={<CarChekoutPage />} />
+          <Route path='/signup' element={<SignUp />} />
+          <Route path='/login' element={<Login />} />
 
 
          //This is default Routes
