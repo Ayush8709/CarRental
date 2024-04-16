@@ -14,6 +14,8 @@ import Login from './components/main/Login/Login'
 import CarChekoutPage from './CarCollactions/CarChekOut/ChekOut'
 
 const App = () => {
+  const isUserSignedIn = !!localStorage.getItem('token')
+  console.log(isUserSignedIn)
   return (
     <>
       <Router>
@@ -25,7 +27,8 @@ const App = () => {
           <Route path='/cars' element={<AllCars />} />
           <Route path='/mahindra' element={<Mahindra />} />
           <Route path='/tata' element={<Tata />} />
-          <Route path='/checkout/:id' element={<CarChekoutPage />} />
+       {isUserSignedIn && <Route path='/checkout/:id' element={<CarChekoutPage />} />} 
+         {/* <Route path='/checkout/:id' element={<CarChekoutPage />} /> */}
           <Route path='/signup' element={<SignUp />} />
           <Route path='/login' element={<Login />} />
 

@@ -26,7 +26,7 @@ const SignUp = () => {
   const handleSubmit = (event) => {
       event.preventDefault();
       axios
-      .post('http://localhost:5000/register', { email, username, password })
+      .post('http://localhost:8000/api/v1/auth/register', { email, username, password })
       .then(() => {
           alert('Registration Successful')
         //   setEmail('')

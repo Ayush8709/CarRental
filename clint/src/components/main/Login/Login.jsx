@@ -10,30 +10,19 @@ const Login = () => {
 
   console.log(email , password);
 
-  useEffect(() => {
-    // fetchUsers();
-  }, [])
-
-  // const fetchUsers = () => {
-  //   axios
-  //     .get('http://localhost:5000/register')
-  //     .then((res) => {
-  //       console.log(res.data)
-  //     })
-  // }
-
 
   const handleLogin = async (event) => {
     event.preventDefault();
     try {
       const response = await axios
-        .post('http://localhost:5000/login', { email, password })
+        .post('http://localhost:8000/api/v1/auth/login', { email, password })
          const token = response.data.token
       alert('Login successful')
       // setUsername('')
       // setPassword('')
       // fetchUsers();
-      navigate('/account')
+      navigate('/')
+      alert("Login HO gaya hai")
       window.location.reload();
       localStorage.setItem('token', token)
     } catch (error) {

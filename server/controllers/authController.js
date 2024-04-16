@@ -6,55 +6,31 @@ import JWT from 'jsonwebtoken'
 const JWT_KEY = "ayushsingh"
 
 //Register auth
-const registerController =async ( req, res) =>{
+const registerController = async (req, res) => {
     try {
-        // const {userName, email, password, phone} = req.body
-        const {userName, email , password, phone} = req.body;
+        const { email, username, password } = req.body
+        console.log(email, username, password )
 
-        // validation  of user Registration form
-        console.log(userName , email, password, phone)
-
-        if(!userName || !email || !password || !phone ){
-            return res.status(500).send({
-                success: false,
-                message:"Please provide valid filed in Registration form"
-            })
-
+        if(!email || !username || !password ){
+            return res.status(500).json({ message: 'Please Enter Valid Form Data' })
         }
 
-        // Chek user exist on Database or Not
-        const existing = await User.findOne({email})
-        if(existing){
-            return res.status(500).send({
-                success:false,
-                message:"Email already register"
-            })
+        // if(password ===conformpassword){
+        //    console.log('yes passwor equal hai')
+        // }
+
+        const chekUser =await User.findOne({email});
+
+        if(chekUser){
+            return res.status(500).json({ message: 'User Already Exist' })
         }
-
-        //password hassing with the help of becript js
-        var salt = bcrypt.genSaltSync(10);
-        const hashPassword = await bcrypt.hash(password, salt)
-
-        // if user is not existe on databasse then create new Registration Form
-        const user = await User.create({
-            userName,
-            email,
-            password:hashPassword,
-            phone
-            })
-
-        res.status(201).send({
-            success: true,
-            message:"SuccessFully Register ",
-            user
-        })  
-             
+        
+        const hashedPassword = await bcrypt.hash(password, 10)
+        const newUser = new User({ email, username, password: hashedPassword })
+        await newUser.save()
+        res.status(201).json({ message: 'User created successfully' , newUser })
     } catch (error) {
-        console.log(error);
-        res.status(500).send({
-            success:false,
-            message:'Error to Registration API'  ,
-        })
+        res.status(500).json({ error: 'Error signing up' })
     }
 };
 
@@ -62,58 +38,58 @@ const registerController =async ( req, res) =>{
 
 
 //LOGIN 
-const loginController = async(req, res)=>{
+const loginController = async (req, res) => {
     try {
         //get email and password to database
-        const {email,password} = req.body
-        
+        const { email, password } = req.body
+
         //validation
-        if(!email || !password){
+        if (!email || !password) {
             return res.status(500).send({
-                success:false,
-                message:"Please provide valid email and password",
+                success: false,
+                message: "Please provide valid email and password",
             })
         }
 
-        
+
         //Check User 
-       
-        const user = await User.findOne({email})
-        if(!user){
+
+        const user = await User.findOne({ email })
+        if (!user) {
             return res.status(404).send({
-                success:false,
-                message:"User Not Match"
+                success: false,
+                message: "User Not Match"
             })
         }
-            //password match with compare  function
+        //password match with compare  function
         const isMatch = await bcrypt.compare(password, user.password)
-        if(!isMatch){
+        if (!isMatch) {
             return res.status(500).send({
-                success:false,
-                message:"Invalid Credentials"
+                success: false,
+                message: "Invalid Credentials"
             })
         }
 
         //jwt token create
-        const token = JWT.sign({id: user._id}, JWT_KEY , {
-            expiresIn:"7d",
+        const token = JWT.sign({ id: user._id }, JWT_KEY, {
+            expiresIn: "7d",
         })
         res.status(200).send({
-            success:true,
-            message:"Login SuccesFully",
+            success: true,
+            message: "Login SuccesFully",
             token,
-            user,
-           
+            // user,
+
         })
     } catch (error) {
         console.log(error);
         res.status(500).send({
-            success:false,
-            message:"Error in Login API",
+            success: false,
+            message: "Error in Login API",
             error
         })
     }
 }
 
-export { registerController,loginController};
+export { registerController, loginController };
 
