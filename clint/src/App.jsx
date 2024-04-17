@@ -50,4 +50,23 @@ const App = () => {
 
 export default App
 
+// import React from 'react';
+// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+// import NotFoundPage from './components/main/NotFound'
+
+// const App = () => {
+//   return (
+//     <Router>
+//       <Routes>
+//         <Route path='/navbar' element={<Navbar/>} exact />
+//         <Route path='/' element={<Main />} exact />
+//         {/* 404 - Page Not Found */}
+//         <Route path="*" element={<NotFoundPage />} />
+//       </Routes>
+//     </Router>
+//   );
+// };
+
+// export default App;
 
