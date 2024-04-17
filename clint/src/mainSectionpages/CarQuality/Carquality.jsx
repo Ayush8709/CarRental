@@ -38,7 +38,7 @@ const Carquality = () => {
                                 <p>
                                     
                                     <button className="btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                                        Read MORE ->
+                                        Read MORE 
                                     </button>
                                 </p>
                                 <div className="collapse" id="collapseExample">

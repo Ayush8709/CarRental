@@ -1,0 +1,29 @@
+.signUp_form_Input{
+    width: 400px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #ccc;
+    padding: 10px;
+   
+}
+
+@media screen and (max-width: 490px){
+    .signUp_form_Input{
+        width: 20pc;
+    }
+
+@media screen and (max-width: 425px) {
+    .signUp_form_Input{
+        width: 20pc;
+    }
+
+    @media screen and (max-width: 375px) {
+        .signUp_form_Input{
+            width: 16pc;
+        }
+    } 
+} 
+ }
+
+
+/* style={{ width: '400px', height: '40px', borderRadius: '20px', backgroundColor: '#ccc', padding: '10px' }} */

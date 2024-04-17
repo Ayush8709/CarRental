@@ -12,6 +12,7 @@ import Tata from './CarCollactions/Tata/Tata'
 import SignUp from './components/main/SignUp/SignUp'
 import Login from './components/main/Login/Login'
 import CarChekoutPage from './CarCollactions/CarChekOut/ChekOut'
+import CarBookingForm from './CarCollactions/CarBookingForm/CarBookingForm'
 
 const App = () => {
   const isUserSignedIn = !!localStorage.getItem('token')
@@ -31,6 +32,8 @@ const App = () => {
          {/* <Route path='/checkout/:id' element={<CarChekoutPage />} /> */}
           <Route path='/signup' element={<SignUp />} />
           <Route path='/login' element={<Login />} />
+          <Route path='/carbookingform' element={<CarBookingForm />} />
+
 
 
          //This is default Routes

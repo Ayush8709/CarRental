@@ -1,6 +1,7 @@
 import React,{useState,useEffect} from 'react'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
+import './SignUp.css'
 
 const SignUp = () => {
   const [users, setUsers] = useState([])
@@ -49,46 +50,47 @@ const SignUp = () => {
    <div className='container-fluid d-flex bg-dark'>
    
     <div className='col-md bg-dark text-white d-flex justify-content-center align-items-center'>
-        <form className='text-center border rounded-lg p-4 mb-5' onSubmit={handleSubmit} style={{ maxWidth: '600px', height: '400px' }}>
+        <form className='text-center  p-4 mb-5' onSubmit={handleSubmit} style={{ maxWidth: '600px', height: '400px' }}>
             {/* Email Input */}
             <label htmlFor="email">Email</label>
             <br />
             <input
                 id="email"
-                className='form-control mb-3'
+                className='form-control mb-3 signUp_form_Input'
                 type='text'
                 placeholder='Email'
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                style={{ width: '400px', height: '40px', borderRadius: '20px', backgroundColor: '#ccc', padding: '10px' }}
+                
             />
             {/* Username Input */}
             <label htmlFor="username">Username</label>
             <br />
             <input
                 id="username"
-                className='form-control mb-3'
+                className='form-control mb-3 signUp_form_Input'
                 type='text'
                 placeholder='Username'
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
-                style={{ width: '400px', height: '40px', borderRadius: '20px', backgroundColor: '#ccc', padding: '10px' }}
+                
             />
             {/* Password Input */}
             <label htmlFor="password">Password</label>
             <br />
             <input
                 id="password"
-                className='form-control mb-3'
+                className='form-control mb-3 signUp_form_Input'
                 type='password'
                 placeholder='Password'
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                style={{ width: '400px', height: '40px', borderRadius: '20px', backgroundColor: '#ccc', padding: '10px' }}
+               
             />
             {/* Button */}
             <button className='btn btn-primary btn-lg mb-3' type='submit' style={{ width: '200px', height: '50px', border: 'none', backgroundColor: '#0056b3', ':hover': { backgroundColor: '#004080' } }}>Sign Up</button>
         </form>
+        
     </div>
    
 </div>

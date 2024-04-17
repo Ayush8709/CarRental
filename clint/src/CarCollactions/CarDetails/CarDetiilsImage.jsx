@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import './CarDetails.css'
 import axios from 'axios'
 import { useParams } from 'react-router-dom'
 import img from '../../../public/dataImg/TataSAfari.jpg'

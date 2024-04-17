@@ -1,0 +1,31 @@
+ .login_form_input{
+    width: 400px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #ccc;
+    padding: 10px;
+   
+ }
+
+
+ @media screen and (max-width: 490px){
+
+    .login_form_input{
+        width: 20pc;
+    }
+
+@media screen and (max-width: 425px) {
+    .login_form_input{
+        width: 20pc;
+    }
+
+    @media screen and (max-width: 375px) {
+        .login_form_input{
+            width: 17pc;
+        }
+    } 
+} 
+ }
+
+
+  /* style={{ width: '400px', height: '40px', borderRadius: '20px', backgroundColor: '#ccc', padding: '10px' }} */
