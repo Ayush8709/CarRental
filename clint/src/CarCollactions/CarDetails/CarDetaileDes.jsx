@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import { useParams } from 'react-router-dom'
 import { Link } from 'react-router-dom'
+
 //animatin laibrary
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
@@ -51,7 +52,7 @@ const CarDetaileDes = () => {
 
     }
   }
-  // console.log(single)
+  
 
   useEffect(() => {
     mySingleData()
@@ -93,6 +94,7 @@ const CarDetaileDes = () => {
           <div className='d-flex justify-content-between' >
             <h2 style={{ fontSize: '3rem', fontWeight: 'bold' }} className='car'>Total  :-</h2>
             <h2 style={{ color: "red", fontSize: '3rem', fontWeight: 'bold' }} className='car_price'>{single.price * day == 0 ? single.price : single.price * day}</h2>
+           
           </div>
 
 
