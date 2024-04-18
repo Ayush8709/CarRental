@@ -3,10 +3,10 @@ import ContactSchema from "../models/contactUsModel.js";
 //Save Contact us page data 
 const myCarRentalContactPage = async (req, res) => {
     try {
-        const { fullName, addresh, city, age, pincode, phoneNumber, email, issue } = req.body;
-        console.log(fullName, addresh, city, age, pincode, phoneNumber, email, issue);
+        const { fullName, addresh,  age, pincode, phoneNumber, email, issue } = req.body;
+        console.log(fullName, addresh, age, pincode, phoneNumber, email, issue);
 
-        if (!fullName || !addresh || !city || !age || !pincode || !phoneNumber || !email || !issue) {
+        if (!fullName || !addresh || !age || !pincode || !phoneNumber || !email || !issue) {
             return res.status(500).send({
                 success: false,
                 message: "Please provide valid Contact  filed "
@@ -16,7 +16,7 @@ const myCarRentalContactPage = async (req, res) => {
         const contactUs = await ContactSchema.create({
             fullName,
             addresh,
-            city,
+           
             age,
             pincode,
             phoneNumber,

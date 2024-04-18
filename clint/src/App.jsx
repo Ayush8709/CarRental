@@ -28,8 +28,8 @@ const App = () => {
           <Route path='/cars' element={<AllCars />} />
           <Route path='/mahindra' element={<Mahindra />} />
           <Route path='/tata' element={<Tata />} />
-       {isUserSignedIn && <Route path='/checkout/:id' element={<CarChekoutPage />} />} 
-         {/* <Route path='/checkout/:id' element={<CarChekoutPage />} /> */}
+          {isUserSignedIn && <Route path='/checkout/:id' element={<CarChekoutPage />} />}
+          {/* <Route path='/checkout/:id' element={<CarChekoutPage />} /> */}
           <Route path='/signup' element={<SignUp />} />
           <Route path='/login' element={<Login />} />
           <Route path='/carbookingform' element={<CarBookingForm />} />

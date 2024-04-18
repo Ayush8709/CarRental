@@ -68,13 +68,13 @@ const CarDetaileDes = () => {
           </div>
 
 
-          <button className='btn btn-primary btn-lg btn-block text-light' style={{ width: '100%' }}> <Link to='/carbookingform ' className='text-light' style={{ textDecoration: "none" }}> Click Me </Link> </button>
+          <button className='btn btn-primary btn-lg btn-block text-light' style={{ width: '100%' }}> <Link to='/carbookingform ' className='text-light' style={{ textDecoration: "none" }}> Proceed{'>>'} </Link> </button>
 
-       
 
-          
 
-         
+
+
+
 
         </div>
       </div>

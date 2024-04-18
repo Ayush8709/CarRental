@@ -33,6 +33,9 @@ app.use('/api/v1/cardata',carApi)
 import ContactUs from './routes/contactRoutes.js'
 app.use('/api/v1/contact', ContactUs)
 
+//User Details Data 
+import userDetails from './routes/useDetails.js'
+app.use('/api/v1/usedetails', userDetails)
 
 //Default route
 app.get('/',(req, res)=>{

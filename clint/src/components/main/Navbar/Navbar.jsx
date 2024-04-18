@@ -46,6 +46,8 @@ const Navbar = () => {
                 <Link className="nav-link active navbar_link_gsap" style={myStyle} to="/about">About</Link>
               </li>
               <li className="nav-item dropdown">
+
+                {!isUserSignedIn ? <> <Link className="nav-link active navbar_link_gsap" style={myStyle} to="/login">OurCars</Link></> :<>
                 <Link className="nav-link dropdown-toggle text-dark navbar_link_gsap" to="#" style={myStyle} role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   OurCars
                 </Link>
@@ -56,6 +58,17 @@ const Navbar = () => {
                   <li><hr className="dropdown-divider" /></li>
                   <li><Link className="dropdown-item navbar_link_gsap" style={myStyle} to="/cars">All Cars</Link></li>
                 </ul>
+                </> }
+                {/* <Link className="nav-link dropdown-toggle text-dark navbar_link_gsap" to="#" style={myStyle} role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  OurCars
+                </Link>
+                <ul className="dropdown-menu">
+                  <li><Link className="dropdown-item  navbar_link_gsap" style={myStyle} to="/mahindra">Mahindra</Link></li>
+                  <li><hr className="dropdown-divider" /></li>
+                  <li><Link className="dropdown-item navbar_link_gsap" style={myStyle} to="/tata">Tata</Link></li>
+                  <li><hr className="dropdown-divider" /></li>
+                  <li><Link className="dropdown-item navbar_link_gsap" style={myStyle} to="/cars">All Cars</Link></li>
+                </ul> */}
               </li>
               <li className="nav-item">
                 <Link className="nav-link active navbar_link_gsap" style={myStyle} to="/contact">Contact Us</Link>
@@ -64,7 +77,7 @@ const Navbar = () => {
             <>
             <li className="nav-item">
                 {/* <Link className="nav-link active navbar_link_gsap" onClick={handleSignOut}  style={myStyle} >Sign Out</Link> */}
-                <button onClick={handleSignOut} className='btn btn-outline-light bg-dark text-light'>Sign Out</button>
+                <button onClick={handleSignOut} className='btn btn-outline-light bg-dark text-light mt-2'>Sign Out</button>
               </li>
             </>
             :

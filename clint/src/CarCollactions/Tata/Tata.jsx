@@ -39,6 +39,7 @@ const Tata = () => {
                 <div className="container carChild">
                     <div className="row mt-5">
                         {
+                             !carApi ? <p>Loding...</p> :
                             carApi.map((value, id) => {
                                 return (
 
@@ -59,8 +60,8 @@ const Tata = () => {
                                                 <li className="list-group-item">Company: {value.category.brand}</li>
                                             </ul>
                                             <div className="card-body">
-                                                <Link to='/checkout' > <button className='btn btn-md btn-danger'>CheckOut</button></Link>
-                                            </div>
+                                                <Link to={`/checkout/${value.id}`} > <button className='btn btn-md btn-danger'>CheckOut</button></Link>
+                                                </div>
                                         </div>
                                     </div>
 
@@ -68,8 +69,7 @@ const Tata = () => {
                             })
                         }
 
-                        {/* <div className="col-sm-4"></div>
-                <div className="col-sm-4"></div> */}
+                  
 
                     </div>
                 </div>

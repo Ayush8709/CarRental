@@ -11,10 +11,7 @@ const contactUsModel = new mongoose.Schema({
         required: [true, 'email is required'],
     },
 
-    city: {
-        type: String,
-        required: [true, 'city is required']
-    },
+    
 
     age: {
         type: Number,
