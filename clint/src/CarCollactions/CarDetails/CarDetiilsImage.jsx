@@ -34,7 +34,7 @@ const CarDetiils = () => {
                             <img src={single.image} className="d-block w-100" alt="..." />
                         </div>
                         <div className="carousel-item">
-                            <img src={single.image}className="d-block w-100" alt="..." />
+                            <img src={single.image} className="d-block w-100" alt="..." />
                         </div>
                     </div>
                     <button className="carousel-control-prev text-light" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
@@ -46,6 +46,7 @@ const CarDetiils = () => {
                         <span className="visually-hidden">Next</span>
                     </button>
                 </div>
+                <p style={{fontSize:'25px', textAlign:'center' , color:'black'}}>{single.description}</p>
             </div>
         </>
     )

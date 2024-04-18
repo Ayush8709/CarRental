@@ -10,11 +10,11 @@ const yourSchema = new mongoose.Schema({
     price: Number,
     model: Number,
     fueltype: String,
-    category: {
-        brand: String,
-        cartype: String,
-        rating: Number
-    }
+    description:String,
+    brand: String,
+    cartype: String,
+    rating: Number
+    
 }, { timestamps: true });
 
 const carRentalMainApi = mongoose.model('carRentalMainApi', yourSchema);

@@ -4,12 +4,12 @@ import CarDetaileDes from '../CarDetails/CarDetaileDes'
 const ChekOut = () => {
     return (
         <>
-            <div className="container-fluid border border-primary">
+            <div className="container-fluid ">
                 <div className="row" style={{display:'flex',flexWrap:"wrap"}}>
                     <div className="col-sm-8  ">
                         <CarDetiilsImage />
                     </div>
-                    <div className="col-sm-4 border border-danger">
+                    <div className="col-sm-4 ">
                         <CarDetaileDes />
                     </div>
                 </div>

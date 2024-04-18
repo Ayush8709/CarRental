@@ -81,13 +81,13 @@ const CarDetaileDes = () => {
           <div className='d-flex justify-content-between' style={{ fontSize: '22px', fontWeight: 'bold' }}> <p className='car'>Fuletype:</p> <p className='car_price'>{single.fueltype}</p>
           </div>
 
-          <div className='d-flex justify-content-between' style={{ fontSize: '22px', fontWeight: 'bold' }}> <p className='car'>Category:</p> <p className='car_price'>Category</p>
+          <div className='d-flex justify-content-between' style={{ fontSize: '22px', fontWeight: 'bold' }}> <p className='car'>Category:</p> <p className='car_price'>{single.brand}</p>
+          </div> 
+
+          <div className='d-flex justify-content-between' style={{ fontSize: '22px', fontWeight: 'bold' }}> <p className='car'>Rating:</p> <p className='car_price'>{single.rating}/5</p>
           </div>
 
-          <div className='d-flex justify-content-between' style={{ fontSize: '22px', fontWeight: 'bold' }}> <p className='car'>Rating:</p> <p className='car_price'>Rating</p>
-          </div>
-
-          <div className='d-flex justify-content-between' style={{ fontSize: '22px', fontWeight: 'bold' }}> <p className='car'>Cartype:</p> <p className='car_price'>CarType</p>
+          <div className='d-flex justify-content-between' style={{ fontSize: '22px', fontWeight: 'bold' }}> <p className='car'>Cartype:</p> <p className='car_price'>{single.cartype}</p>
           </div>
 
           <div className='d-flex justify-content-between' >

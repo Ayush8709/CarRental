@@ -58,12 +58,12 @@ const AllCars = () => {
                                             <img src={value.image}  className="card-img-top car_Image" alt="..." />
                                                 <div className="card-body">
                                                     <h5 className="card-title"><h2>{value.name}</h2></h5>
-                                                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                    <p className="card-text">{value.description}</p>
                                                 </div>
                                                 <ul className="list-group list-group-flush">
                                                     <li className="list-group-item">Price : {value.price}/day</li>
                                                     <li className="list-group-item">Mode :  {value.model}</li>
-                                                    <li className="list-group-item">Company: {value.category.brand}</li>
+                                                    <li className="list-group-item">Company: {value.brand}</li>
                                                 </ul>
                                                 <div className="card-body">
                                                 <Link to={`/checkout/${value.id}`} > <button className='btn btn-md btn-danger'>CheckOut</button></Link>

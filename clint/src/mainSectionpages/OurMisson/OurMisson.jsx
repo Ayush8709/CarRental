@@ -11,15 +11,10 @@ const OurMisson = () => {
 
     useGSAP(()=>{
     gsap.from(".ourMissonImg",{
-        scale:0.1,
-        duration:4,
-        border:"2px solid red",
-        height:"20pc",
-        // scrollTrigger:{
-        //     trigger:'ourMissonImg',
-        //     scrub:2,
-            
-        // }
+       scale:0.2,
+       duration:2,
+       yoyo:true,
+      
     })
 
     gsap.from('.our_misson_heading',{
