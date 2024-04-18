@@ -57,7 +57,7 @@ const Tata = () => {
                                             <ul className="list-group list-group-flush">
                                                 <li className="list-group-item">Price : {value.price}/day</li>
                                                 <li className="list-group-item">Mode :  {value.model}</li>
-                                                <li className="list-group-item">Company: {value.category.brand}</li>
+                                                <li className="list-group-item">Company: {value.brand}</li>
                                             </ul>
                                             <div className="card-body">
                                                 <Link to={`/checkout/${value.id}`} > <button className='btn btn-md btn-danger'>CheckOut</button></Link>

@@ -30,7 +30,7 @@ const Login = () => {
       // setPassword('')
       // fetchUsers();
       navigate('/')
-      // window.location.reload();
+      window.location.reload();
       localStorage.setItem('token', token)
     } catch (error) {
       console.log('Login Error', error)

@@ -73,9 +73,10 @@ const mahindraCarApi = async (req, res) => {
         // await res.json(mahindraCar)
 
         //This method send data on Mongodb and send react js
-        const filteredCars = await carRentalMainApi.find({ 'category.brand': 'Mahindra' });
+        const filteredCars = await carRentalMainApi.find({ 'brand': 'Mahindra' });
         res.json(filteredCars);
 
+        //    const filteredData = await carRentalMainApi.find()
 
 
     } catch (error) {
@@ -105,7 +106,7 @@ const marutiSuzikiApi = async (req, res) => {
 
 
         //This method work only when you send data in mongodb to react js
-        const filteredCars = await carRentalMainApi.find({ 'category.brand': 'MarutiSuzuki' });
+        const filteredCars = await carRentalMainApi.find({ 'brand': 'MarutiSuzuki' });
         res.json(filteredCars);
 
     } catch (error) {
@@ -132,7 +133,7 @@ const tataCarApi = async (req, res) => {
 
 
     //This method send data on Mongodb and send react js
-    const filteredCars = await carRentalMainApi.find({ 'category.brand': 'Tata' });
+    const filteredCars = await carRentalMainApi.find({ 'brand': 'Tata' });
     res.json(filteredCars);
 }
 
