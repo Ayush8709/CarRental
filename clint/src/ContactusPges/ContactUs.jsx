@@ -45,7 +45,7 @@ const ContactUs = () => {
     const contactSaveData = async (e) => {
         e.preventDefault();
         try {
-            await axios.post('http://localhost:8000/api/v1/contact/contactus', contact)
+            await axios.post('/api/v1/contact/contactus', contact)
             alert("Conact save ")
         } catch (error) {
             alert('Contact Not Save')

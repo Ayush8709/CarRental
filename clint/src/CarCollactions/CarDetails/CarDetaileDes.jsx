@@ -45,7 +45,7 @@ const CarDetaileDes = () => {
   // console.log(day)
   const mySingleData = async () => {
     try {
-      const myData = await axios.get(`http://localhost:8000/api/v1/cardata/cardetail/${id}`)
+      const myData = await axios.get(`/api/v1/cardata/cardetail/${id}`)
       setSignle(myData.data)
     } catch (error) {
 

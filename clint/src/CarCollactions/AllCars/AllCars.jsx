@@ -1,7 +1,6 @@
 import React, { useEffect, useState,useRef } from 'react'
 import './AllCar.css'
-// CarApiCall
-import data from '../../../data.js'
+
 import axios from 'axios'
 import { Link } from 'react-router-dom'
 
@@ -21,7 +20,7 @@ const AllCars = () => {
     //Fetch all Car Api with backend
     const myCarApi = async () => {
         try {
-            const myCarApiDetail = await axios.get('http://localhost:8000/api/v1/cardata/data')
+            const myCarApiDetail = await axios.get('/api/v1/cardata/data')
             setCarApi(myCarApiDetail.data)
             //   console.log(carApi);
         } catch (error) {

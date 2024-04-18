@@ -23,7 +23,7 @@ const Login = () => {
     event.preventDefault();
     try {
       const response = await axios
-        .post('http://localhost:8000/api/v1/auth/login', { email, password })
+        .post('/api/v1/auth/login', { email, password })
       const token = response.data.token
       alert('Login successful',"Email :-" ,email, "password :-" , password  )
       // setUsername('')
