@@ -45,47 +45,7 @@ const ContactForm = () => {
                             </div>
                         </div>
                         <div className="col-sm-6 contactformparent_form_field"  >
-                            <div>
-                                <h1>Booking Form</h1>
-                                <p>At Easy Car Booking, we strive to make your car rental experience seamless and hassle-free. With our user-friendly platform, booking a car has never been easier.</p>
-                            </div>
-
-                            <div className='contactformparent_form'>
-                                <form>
-                                    <div className='contactformparent_form_textfield'>
-                                        <input  className='contactformparent_form_textfield_area' type="text" maxLength="30" size="30" placeholder='Your name' required />
-                                        <input className='contactformparent_form_textfield_area' type="text" placeholder='Your Number' maxLength="10" size="10" required />
-                                    </div>
-
-                                    <div className='contactformparent_form_textfield'>
-                                        <input className='contactformparent_form_textfield_area' type="email" maxLength="30" size="30" placeholder='Your Email' required />
-
-                                        {/* <label for="cars"></label> */}
-                                        <select id="cars" name="cars" className='contactformparent_form_textfield_area'>
-                                            <option value="volvo">Choose a car:</option>
-                                            <option value="saab">Saab</option>
-                                            <option value="fiat">Fiat</option>
-                                            <option value="audi">Audi</option>
-                                        </select>
-                                        <input type="submit" className='contactformparent_form_carSelect_button'/>
-                                    </div>
-
-                                        <div className='contactformparent_form_textfield'>
-                                          
-                                            <label htmlFor="pickupdate"style={{fontSize:"18px", fontFamily:"emoji"}}>Picke Up Date</label>
-                                            <input className='contactformparent_form_textfield_area' type="date" id='pickupdate'/>
-
-                                        </div>
-
-                                        <div>
-                                            <textarea  className='contactformparent_form_textfield_textarea' name="" id="" cols="62" rows="5" placeholder='Your Request' maxLength="40"></textarea>
-                                            {/* <input className='contactformparent_form_textfield_area' type="text" maxLength="30" size="30" placeholder='Your Request' required /> */}
-                                        </div>
-
-                                        <button className='btn btn-lg btn-primary contactformparent_form_submit'>Submit Now</button>
-
-                                </form>
-                            </div>
+                            <img src="https://img.freepik.com/free-vector/car-rental-service-facebook-template_23-2150512081.jpg?t=st=1713432184~exp=1713435784~hmac=55f6c7c379106a6bac7d7f3a14baef7d5925824eefa4b73ae5fe50bb418cb08d&w=826" style={{ height: '33pc', width: '100%' }} alt="" />
                         </div>
                     </div>
                 </div>

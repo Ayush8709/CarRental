@@ -2,7 +2,6 @@ import React, { useRef } from 'react'
 import './Banner.css'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
-
 gsap.registerPlugin(ScrollTrigger)
 
 const main = () => {

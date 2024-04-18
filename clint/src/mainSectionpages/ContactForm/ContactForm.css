@@ -54,76 +54,10 @@
     font-size: 20px;
 }
 /* table */
-.contactformparent_form{
-    /* border: 2px solid black; */
-    width: auto;
-    height: 26pc;
-    max-height: 27pc;
-}
-.contactformparent_form_field {
-    background-color: white;
-    color: black;
-    box-shadow: 1px 7px 36px black;
-    border-radius: 2pc;
-}
-.contactformparent_form_textfield{
-    width: 99%;
-    max-width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    margin: 16px 1px 21px 2px;
-    height: 3pc;
-  
-
-}
-.contactformparent_form_textfield_area{
-    width: 49%;
-    border: none;
-    border-bottom: 2px solid cornflowerblue;
-    border-radius: 1pc;
-    padding-left: 24px;
-}
-.contactformparent_form_carSelect_button{
-    width: 20%;
-}
-.contactformparent_form_textfield_textarea{
-    border: navajowhite;
-    border-bottom: 2px solid blue;
-    border-radius: 15px;
-    padding-left: 20px;
-    margin-top: 18px;
-    width: 98%;
-    margin-left: 8px;
-    margin-top: 10px;
-}
-.contactformparent_form_submit{
-    width: 100%;
-}
-
-/* REsponsive */
 
 
 
-/* @media screen and (max-width: 575px){
-    .contactformparent{
-        height: 91pc;
-    }
 
-@media screen and (max-width: 375px){
-    .contactformparent{
-        height: 100pc;
-    }
-}}
-@media screen and (max-width: 768px){
-    .contactformparent{
-        height: 56pc;
-    }
-}
-@media screen and (max-width: 1194px){
-    .contactformparent{
-        height: 47pc;
-    }
-} */
 
 @media screen and (max-width: 768px){
     .contactformparent{

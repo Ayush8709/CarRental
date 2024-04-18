@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState,useRef } from 'react'
 import './AllCar.css'
 // CarApiCall
 import data from '../../../data.js'
@@ -6,8 +6,13 @@ import axios from 'axios'
 import { Link } from 'react-router-dom'
 
 
-const AllCars = () => {
 
+
+const AllCars = () => {
+ 
+   
+
+   
 
 
     const [carApi, setCarApi] = useState([]);
@@ -26,7 +31,7 @@ const AllCars = () => {
 
     useEffect(() => {
         myCarApi()
-
+       
        
     })
 
@@ -50,7 +55,7 @@ const AllCars = () => {
                                     <div className="col-sm-4 AllCarsCard" key={id}>
                                     
                                         <div className="card pt-2" style={{width:"22rem", border:"none"}} >
-                                            <img src={value.image}  className="card-img-top" alt="..." />
+                                            <img src={value.image}  className="card-img-top car_Image" alt="..." />
                                                 <div className="card-body">
                                                     <h5 className="card-title"><h2>{value.name}</h2></h5>
                                                     <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>

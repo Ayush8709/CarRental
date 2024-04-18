@@ -2,8 +2,36 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import { useParams } from 'react-router-dom'
 import { Link } from 'react-router-dom'
+//animatin laibrary
+import gsap from 'gsap'
+import { useGSAP } from '@gsap/react'
+gsap.registerPlugin(ScrollTrigger)
+
 
 const CarDetaileDes = () => {
+
+  //animation laibray 
+  useGSAP(()=>{
+    gsap.from('.car_name',{
+     y:-100,
+     duration:0.9,
+     scale:0.5
+    })
+
+    gsap.from('.car_price',{
+      x:200,
+      scale:0.5,
+      duration:0.8
+    })
+
+    gsap.from('.car',{
+      x:-200,
+      scale:0.5,
+      duration:0.8
+    })
+
+  })
+
   const [day, setDay] = useState('1')
   const [single, setSignle] = useState({})
   const { id } = useParams()
@@ -33,38 +61,38 @@ const CarDetaileDes = () => {
       <div className="car-details">
         <div className="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
 
-          <h5 className="mb-4 " style={{ fontSize: '4rem', color: 'red' }}>{single.name}</h5>
+          <h5 className="mb-4 car_name" style={{ fontSize: '4rem', color: 'red' }}>{single.name}</h5>
 
-          <div className='d-flex justify-content-between' style={{ fontSize: '2rem', fontWeight: 'bold' }}> <p>Price:</p> <p>{single.price}/day</p>
+          <div className='d-flex justify-content-between' style={{ fontSize: '2rem', fontWeight: 'bold' }}> <p className='car'>Price:</p> <p className='car_price'>{single.price}/day</p>
           </div>
 
-          <div className='d-flex justify-content-between' > <p style={{ fontSize: '22px', fontWeight: 'bold' }}>Enter Car Day:</p> <p><input type="text" style={{ width: "8pc", borderRadius: '20px', textAlign: 'center' }} value={day} onChange={changeDay} /></p>
+          <div className='d-flex justify-content-between' > <p style={{ fontSize: '22px', fontWeight: 'bold' }} className='car'>Enter Car Day:</p> <p><input type="text" style={{ width: "8pc", borderRadius: '20px', textAlign: 'center' }} value={day} onChange={changeDay} /></p>
           </div>
 
-          <div className='d-flex justify-content-between' style={{ fontSize: '22px', fontWeight: 'bold' }}> <p>Sheet:</p> <p>{single.sheet}</p>
+          <div className='d-flex justify-content-between' style={{ fontSize: '22px', fontWeight: 'bold' }}> <p className='car'>Sheet:</p> <p className='car_price'>{single.sheet}</p>
           </div>
 
-          <div className='d-flex justify-content-between' style={{ fontSize: '22px', fontWeight: 'bold' }}> <p>Lagguage:</p> <p>{single.lagguage}</p>
+          <div className='d-flex justify-content-between' style={{ fontSize: '22px', fontWeight: 'bold' }}> <p className='car'>Lagguage:</p> <p className='car_price'>{single.lagguage}</p>
           </div>
 
-          <div className='d-flex justify-content-between' style={{ fontSize: '22px', fontWeight: 'bold' }}> <p>Model:</p> <p>{single.model}</p>
+          <div className='d-flex justify-content-between' style={{ fontSize: '22px', fontWeight: 'bold' }}> <p className='car'>Model:</p> <p className='car_price'>{single.model}</p>
           </div>
 
-          <div className='d-flex justify-content-between' style={{ fontSize: '22px', fontWeight: 'bold' }}> <p>Fuletype:</p> <p>{single.fueltype}</p>
+          <div className='d-flex justify-content-between' style={{ fontSize: '22px', fontWeight: 'bold' }}> <p className='car'>Fuletype:</p> <p className='car_price'>{single.fueltype}</p>
           </div>
 
-          <div className='d-flex justify-content-between' style={{ fontSize: '22px', fontWeight: 'bold' }}> <p>Category:</p> <p>Category</p>
+          <div className='d-flex justify-content-between' style={{ fontSize: '22px', fontWeight: 'bold' }}> <p className='car'>Category:</p> <p className='car_price'>Category</p>
           </div>
 
-          <div className='d-flex justify-content-between' style={{ fontSize: '22px', fontWeight: 'bold' }}> <p>Rating:</p> <p>Rating</p>
+          <div className='d-flex justify-content-between' style={{ fontSize: '22px', fontWeight: 'bold' }}> <p className='car'>Rating:</p> <p className='car_price'>Rating</p>
           </div>
 
-          <div className='d-flex justify-content-between' style={{ fontSize: '22px', fontWeight: 'bold' }}> <p>Cartype:</p> <p>CarType</p>
+          <div className='d-flex justify-content-between' style={{ fontSize: '22px', fontWeight: 'bold' }}> <p className='car'>Cartype:</p> <p className='car_price'>CarType</p>
           </div>
 
           <div className='d-flex justify-content-between' >
-            <h2 style={{ fontSize: '3rem', fontWeight: 'bold' }}>Total  :-</h2>
-            <h2 style={{ color: "red", fontSize: '3rem', fontWeight: 'bold' }}>{single.price * day == 0 ? single.price : single.price * day}</h2>
+            <h2 style={{ fontSize: '3rem', fontWeight: 'bold' }} className='car'>Total  :-</h2>
+            <h2 style={{ color: "red", fontSize: '3rem', fontWeight: 'bold' }} className='car_price'>{single.price * day == 0 ? single.price : single.price * day}</h2>
           </div>
 
 

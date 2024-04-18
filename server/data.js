@@ -9,11 +9,11 @@ const myCarRentApi = [
         price: 2000,
         model: 2015,
         fueltype: "Petrol",
-        category: {
-            brand: "Mahindra",
-            cartype: "suv",
-            rating: 4.5
-        }
+        description: "Mahindra cars: Rugged SUVs & versatile models with advanced safety features, spacious interiors, fuel efficiency, and innovative technology. Committed to sustainability with electric vehicle initiatives. Trusted brand for reliability and performance.",
+        brand: "Mahindra",
+        cartype: "suv",
+        rating: 4.5
+
     },
     {
         id: 2,
@@ -24,11 +24,12 @@ const myCarRentApi = [
         price: 2500,
         model: 2012,
         fueltype: "Petrol",
-        category: {
-            brand: "Mahindra",
-            cartype: "suv",
-            rating: 4.2
-        }
+        description: "Mahindra cars: Rugged SUVs & versatile models with advanced safety features, spacious interiors, fuel efficiency, and innovative technology. Committed to sustainability with electric vehicle initiatives. Trusted brand for reliability and performance.",
+
+        brand: "Mahindra",
+        cartype: "suv",
+        rating: 4.2
+
     },
 
     {
@@ -40,11 +41,10 @@ const myCarRentApi = [
         price: 2500,
         model: 2012,
         fueltype: "Petrol",
-        category: {
-            brand: "Mahindra",
-            cartype: "suv",
-            rating: 4.3
-        }
+        description: "Mahindra cars: Rugged SUVs & versatile models with advanced safety features, spacious interiors, fuel efficiency, and innovative technology. Committed to sustainability with electric vehicle initiatives. Trusted brand for reliability and performance.",
+        brand: "Mahindra",
+        cartype: "suv",
+        rating: 4.3
     },
     {
         id: 4,
@@ -55,11 +55,10 @@ const myCarRentApi = [
         price: 3000,
         model: 2020,
         fueltype: "Petrol",
-        category: {
-            brand: "Mahindra",
-            cartype: "suv",
-            rating: 4.3
-        }
+        description: "Mahindra cars: Rugged SUVs & versatile models with advanced safety features, spacious interiors, fuel efficiency, and innovative technology. Committed to sustainability with electric vehicle initiatives. Trusted brand for reliability and performance.",
+        brand: "Mahindra",
+        cartype: "suv",
+        rating: 4.3
     },
     {
         id: 5,
@@ -70,11 +69,10 @@ const myCarRentApi = [
         price: 3500,
         model: 2021,
         fueltype: "Petrol",
-        category: {
-            brand: "Mahindra",
-            cartype: "suv",
-            rating: 4.5
-        }
+        description: "Mahindra cars: Rugged SUVs & versatile models with advanced safety features, spacious interiors, fuel efficiency, and innovative technology. Committed to sustainability with electric vehicle initiatives. Trusted brand for reliability and performance.",
+        brand: "Mahindra",
+        cartype: "suv",
+        rating: 4.5
     },
     {
         id: 6,
@@ -85,13 +83,12 @@ const myCarRentApi = [
         price: 3000,
         model: 2020,
         fueltype: "Petrol",
-        category: {
-            brand: "Mahindra",
-            cartype: "suv",
-            rating: 4.4
-        }
+        description: "Mahindra cars: Rugged SUVs & versatile models with advanced safety features, spacious interiors, fuel efficiency, and innovative technology. Committed to sustainability with electric vehicle initiatives. Trusted brand for reliability and performance.",
+        brand: "Mahindra",
+        cartype: "suv",
+        rating: 4.4
     },
-    
+
     {
         id: 7,
         name: "Bolero",
@@ -101,11 +98,10 @@ const myCarRentApi = [
         price: 2500,
         model: 2017,
         fueltype: "Diesel",
-        category: {
-            brand: "Mahindra",
-            cartype: "suv",
-            rating: 4.4
-        }
+        description: "Mahindra cars: Rugged SUVs & versatile models with advanced safety features, spacious interiors, fuel efficiency, and innovative technology. Committed to sustainability with electric vehicle initiatives. Trusted brand for reliability and performance.",
+        brand: "Mahindra",
+        cartype: "suv",
+        rating: 4.4
     },
 
 
@@ -118,11 +114,10 @@ const myCarRentApi = [
         price: 2000,
         model: 2020,
         fueltype: "Petrol",
-        category: {
-            brand: "MarutiSuzuki",
-            cartype: "suv",
-            rating: 4.4
-        }
+        description: "Maruti Suzuki, India's leading automotive manufacturer, offers a diverse range of cars known for reliability, fuel efficiency, and affordability. With innovative technology and trusted performance, Maruti Suzuki cars cater to every need and budget.",
+        brand: "MarutiSuzuki",
+        cartype: "suv",
+        rating: 4.4
     },
     {
         id: 9,
@@ -133,11 +128,10 @@ const myCarRentApi = [
         price: 2200,
         model: 2020,
         fueltype: "Petrol",
-        category: {
-            brand: "MarutiSuzuki",
-            cartype: "suv",
-            rating: 4.5
-        }
+        description: "Maruti Suzuki, India's leading automotive manufacturer, offers a diverse range of cars known for reliability, fuel efficiency, and affordability. With innovative technology and trusted performance, Maruti Suzuki cars cater to every need and budget.",
+        brand: "MarutiSuzuki",
+        cartype: "suv",
+        rating: 4.5
     },
 
     {
@@ -149,11 +143,10 @@ const myCarRentApi = [
         price: 3300,
         model: 2021,
         fueltype: "Petrol",
-        category: {
-            brand: "MarutiSuzuki",
-            cartype: "suv",
-            rating: 4.5
-        }
+        description: "Maruti Suzuki, India's leading automotive manufacturer, offers a diverse range of cars known for reliability, fuel efficiency, and affordability. With innovative technology and trusted performance, Maruti Suzuki cars cater to every need and budget.",
+        brand: "MarutiSuzuki",
+        cartype: "suv",
+        rating: 4.5
     },
 
     {
@@ -165,11 +158,10 @@ const myCarRentApi = [
         price: 2500,
         model: 2020,
         fueltype: "Petrol",
-        category: {
-            brand: "MarutiSuzuki",
-            cartype: "suv",
-            rating: 4.3
-        }
+        description: "Maruti Suzuki, India's leading automotive manufacturer, offers a diverse range of cars known for reliability, fuel efficiency, and affordability. With innovative technology and trusted performance, Maruti Suzuki cars cater to every need and budget.",
+        brand: "MarutiSuzuki",
+        cartype: "suv",
+        rating: 4.3
     },
     {
         id: 12,
@@ -180,11 +172,10 @@ const myCarRentApi = [
         price: 2000,
         model: 2016,
         fueltype: "Petrol",
-        category: {
-            brand: "MarutiSuzuki",
-            cartype: "suv",
-            rating: 4.0
-        }
+        description: "Maruti Suzuki, India's leading automotive manufacturer, offers a diverse range of cars known for reliability, fuel efficiency, and affordability. With innovative technology and trusted performance, Maruti Suzuki cars cater to every need and budget.",
+        brand: "MarutiSuzuki",
+        cartype: "suv",
+        rating: 4.0
     },
     {
         id: 13,
@@ -195,11 +186,10 @@ const myCarRentApi = [
         price: 2000,
         model: 2018,
         fueltype: "Petrol",
-        category: {
-            brand: "MarutiSuzuki",
-            cartype: "suv",
-            rating: 4.2
-        }
+        description: "Maruti Suzuki, India's leading automotive manufacturer, offers a diverse range of cars known for reliability, fuel efficiency, and affordability. With innovative technology and trusted performance, Maruti Suzuki cars cater to every need and budget.",
+        brand: "MarutiSuzuki",
+        cartype: "suv",
+        rating: 4.2
     },
     {
         id: 14,
@@ -210,11 +200,10 @@ const myCarRentApi = [
         price: 2200,
         model: 2019,
         fueltype: "Petrol",
-        category: {
-            brand: "MarutiSuzuki",
-            cartype: "suv",
-            rating: 4.0
-        }
+        description: "Maruti Suzuki, India's leading automotive manufacturer, offers a diverse range of cars known for reliability, fuel efficiency, and affordability. With innovative technology and trusted performance, Maruti Suzuki cars cater to every need and budget.",
+        brand: "MarutiSuzuki",
+        cartype: "suv",
+        rating: 4.0
     },
 
     {
@@ -226,11 +215,10 @@ const myCarRentApi = [
         price: 3000,
         model: 2021,
         fueltype: "Petrol",
-        category: {
-            brand: "Tata",
-            cartype: "suv",
-            rating: 4.4
-        }
+        description: "Tata Motors is a leading Indian automotive manufacturer renowned for its diverse range of vehicles, including cars, SUVs, trucks, and buses. With a focus on innovation, quality, and sustainability, Tata delivers reliable transportation solutions globally.",
+        brand: "Tata",
+        cartype: "suv",
+        rating: 4.4
     },
     {
         id: 16,
@@ -241,11 +229,10 @@ const myCarRentApi = [
         price: 2700,
         model: 2020,
         fueltype: "Petrol",
-        category: {
-            brand: "Tata",
-            cartype: "suv",
-            rating: 4.4
-        }
+        description: "Tata Motors is a leading Indian automotive manufacturer renowned for its diverse range of vehicles, including cars, SUVs, trucks, and buses. With a focus on innovation, quality, and sustainability, Tata delivers reliable transportation solutions globally.",
+        brand: "Tata",
+        cartype: "suv",
+        rating: 4.4
     },
 
     {
@@ -257,11 +244,10 @@ const myCarRentApi = [
         price: 4500,
         model: 2022,
         fueltype: "Petrol",
-        category: {
-            brand: "Tata",
-            cartype: "suv",
-            rating: 4.4
-        }
+        description: "Tata Motors is a leading Indian automotive manufacturer renowned for its diverse range of vehicles, including cars, SUVs, trucks, and buses. With a focus on innovation, quality, and sustainability, Tata delivers reliable transportation solutions globally.",
+        brand: "Tata",
+        cartype: "suv",
+        rating: 4.4
     },
     {
         id: 18,
@@ -272,11 +258,10 @@ const myCarRentApi = [
         price: 5000,
         model: 2022,
         fueltype: "Petrol",
-        category: {
-            brand: "Tata",
-            cartype: "suv",
-            rating: 4.4
-        }
+        description: "Tata Motors is a leading Indian automotive manufacturer renowned for its diverse range of vehicles, including cars, SUVs, trucks, and buses. With a focus on innovation, quality, and sustainability, Tata delivers reliable transportation solutions globally.",
+        brand: "Tata",
+        cartype: "suv",
+        rating: 4.4
     },
     {
         id: 19,
@@ -287,14 +272,13 @@ const myCarRentApi = [
         price: 5000,
         model: 2022,
         fueltype: "Petrol",
-        category: {
-            brand: "Tata",
-            cartype: "suv",
-            rating: 4.4
-        }
+        description: "Tata Motors is a leading Indian automotive manufacturer renowned for its diverse range of vehicles, including cars, SUVs, trucks, and buses. With a focus on innovation, quality, and sustainability, Tata delivers reliable transportation solutions globally.",
+        brand: "Tata",
+        cartype: "suv",
+        rating: 4.4
     },
 
 
 ]
 
-export default  myCarRentApi;
+export default myCarRentApi;
