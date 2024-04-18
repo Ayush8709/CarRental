@@ -26,10 +26,10 @@ const userDetails = new mongoose.Schema({
         type:String,
         required:[true,"Enter useDetails zip"]
     },
-    price:{
-        type:String,
-        required:[true, "Enter your total amound"]
-    },
+    // price:{
+    //     type:String,
+    //     required:[true, "Enter your total amound"]
+    // },
 }, {timestamps:true})
 
 const userDetailsdata = mongoose.model('userDetailsdata', userDetails)

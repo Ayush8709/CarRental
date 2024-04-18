@@ -2,10 +2,10 @@ import userDetailsModel from '../models/userDetailsModel.js'
 
 const useDetilsData =async  (req, res)=>{
     try {
-        const {name, phone, email,city, zip,price} = req.body
-        console.log(name, phone, email,city, zip, price);
+        const {name, phone, email,city, zip} = req.body
+        console.log(name, phone, email,city, zip );
 
-        if(!name || !phone || !email || !city  || !zip || !price) {
+        if(!name || !phone || !email || !city  || !zip ) {
             return res.json({message:"please enter valid userDetail"})
         }
 
@@ -23,7 +23,7 @@ const useDetilsData =async  (req, res)=>{
                 email,
                 city, 
                 zip,
-                price
+              
             }
         )
         await userDataSave.save()
