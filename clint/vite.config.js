@@ -7,7 +7,7 @@ export default defineConfig({
     port: 3000,
     proxy: {
       '/api': {
-        target: 'https://carrental-90ih.onrender.com/',
+        target: 'http://localhost:8000',
         changeOrigin: true,
         secure: false
       },
@@ -15,3 +15,4 @@ export default defineConfig({
   },
   plugins: [react()],
 })
+// https://carrental-tafi.onrender.com
