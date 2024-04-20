@@ -14,9 +14,7 @@
     /* border: 2px solid yellow; */
     height: 24pc;
 }
-.footerAllCol{
-    /* border: 1px solid green; */
-}
+
 .footersocalmeida_icon{
     display: flex;
     align-items: center;
@@ -39,15 +37,12 @@
 /* responsive */
 @media screen and (max-width: 360px) {
     .footerParent{
-        /* background-color: red; */
         height: 74pc;
     }
     .footerRow{
-        /* background-color: red; */
         height: 68pc;
     }
     .footerSubParent{
-        /* background-color: red; */
         height: 68pc;
     }
 }

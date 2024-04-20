@@ -20,7 +20,7 @@ const AllCars = () => {
     //Fetch all Car Api with backend
     const myCarApi = async () => {
         try {
-            const myCarApiDetail = await axios.get('/api/v1/cardata/data')
+            const myCarApiDetail = await axios.get('https://car-rental-kappa-hazel.vercel.app/api/v1/cardata/data')
             setCarApi(myCarApiDetail.data)
             //   console.log(carApi);
         } catch (error) {
@@ -56,7 +56,7 @@ const AllCars = () => {
                                         <div className="card pt-2" style={{width:"22rem", border:"none"}} >
                                             <img src={value.image}  className="card-img-top car_Image" alt="..." />
                                                 <div className="card-body">
-                                                    <h5 className="card-title"><h2>{value.name}</h2></h5>
+                                                    <h5 className="card-title">{value.name}</h5>
                                                     <p className="card-text">{value.description}</p>
                                                 </div>
                                                 <ul className="list-group list-group-flush">

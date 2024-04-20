@@ -10,7 +10,7 @@ const CarDetiils = () => {
 
     const mySingleData = async () => {
         try {
-            const myData = await axios.get(`/api/v1/cardata/cardetail/${id}`)
+            const myData = await axios.get(`https://car-rental-kappa-hazel.vercel.app/api/v1/cardata/cardetail/${id}`)
             setSignle(myData.data)
         } catch (error) {
 

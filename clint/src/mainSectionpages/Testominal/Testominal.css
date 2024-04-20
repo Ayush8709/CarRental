@@ -86,13 +86,11 @@
 
 
 /* responsive */
-@media screen and (max-width: 375px){
+/* @media screen and (max-width: 375px){
     .testominalparent{
-        /* background-color: red; */
         height: 65pc;
     }
     .testominalSecondRow{
-        /* background-color: red; */
         height: 38pc;
     }
     .testominalFirstRow_textArea_h1{
@@ -106,13 +104,12 @@
         font-weight: bold;
         font-size: 14px;
     }
-}
+}  */
 
 
 
 @media screen and (max-width: 425px){
     .testominalparent{
-        /* background-color: red; */
         height: 67pc;
     }
     .testominalFirstRow_textArea_h1{
@@ -121,7 +118,6 @@
         
     }
      .testominalSecondRow{
-        /* background-color: red; */
         height: 39pc;
     }
 }
@@ -136,4 +132,4 @@
         color: rgb(61, 216, 221);
         
     }
-}
+} 

@@ -6,7 +6,7 @@ import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 gsap.registerPlugin(ScrollTrigger)
 
-const Carquality = () => {
+ const Carquality = () => {
 
     useGSAP(()=>{
         gsap.from('.carQualityPosterHeading',{
@@ -63,7 +63,7 @@ const Carquality = () => {
             </div>
 
         </>
-    )
-}
 
+    )
+ }
 export default Carquality

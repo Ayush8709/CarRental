@@ -4,34 +4,34 @@ import { useParams } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 
 //animatin laibrary
-import gsap from 'gsap'
-import { useGSAP } from '@gsap/react'
-gsap.registerPlugin(ScrollTrigger)
+// import gsap from 'gsap'
+// import { useGSAP } from '@gsap/react'
+// gsap.registerPlugin(ScrollTrigger)
 
 
 const CarDetaileDes = () => {
 
   //animation laibray 
-  useGSAP(()=>{
-    gsap.from('.car_name',{
-     y:-100,
-     duration:0.9,
-     scale:0.5
-    })
+  // useGSAP(()=>{
+  //   gsap.from('.car_name',{
+  //    y:-100,
+  //    duration:0.9,
+  //    scale:0.5
+  //   })
 
-    gsap.from('.car_price',{
-      x:200,
-      scale:0.5,
-      duration:0.8
-    })
+  //   gsap.from('.car_price',{
+  //     x:200,
+  //     scale:0.5,
+  //     duration:0.8
+  //   })
 
-    gsap.from('.car',{
-      x:-200,
-      scale:0.5,
-      duration:0.8
-    })
+  //   gsap.from('.car',{
+  //     x:-200,
+  //     scale:0.5,
+  //     duration:0.8
+  //   })
 
-  })
+  // })
 
   const [day, setDay] = useState('1')
   const [single, setSignle] = useState({})
@@ -46,7 +46,7 @@ const CarDetaileDes = () => {
   // console.log(day)
   const mySingleData = async () => {
     try {
-      const myData = await axios.get(`/api/v1/cardata/cardetail/${id}`)
+      const myData = await axios.get(`https://car-rental-kappa-hazel.vercel.app/api/v1/cardata/cardetail/${id}`)
       setSignle(myData.data)
     } catch (error) {
 

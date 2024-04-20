@@ -8,7 +8,7 @@ const main = () => {
 
 
     
-    useGSAP(()=>{
+     useGSAP(()=>{
       
         gsap.from(".banner_heading",{
             scale:0.1,
@@ -24,10 +24,11 @@ const main = () => {
             delay:0.5,
           
 
-        })
+        })   
+    })
+
 
     
-    })
     return (
         <>
             <div className="container-fluid banner_background" >

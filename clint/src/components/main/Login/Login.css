@@ -1,3 +1,9 @@
+ 
+ .login_heading{
+    color: red;
+    font-family: cursive;
+    text-transform: uppercase;
+ }
  .login_form_input{
     width: 400px;
     height: 40px;

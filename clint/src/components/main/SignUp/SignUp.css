@@ -1,3 +1,9 @@
+.signUp_heading{
+    color: red;
+    text-transform: uppercase;
+    font-family: cursive;
+}
+
 .signUp_form_Input{
     width: 400px;
     height: 40px;

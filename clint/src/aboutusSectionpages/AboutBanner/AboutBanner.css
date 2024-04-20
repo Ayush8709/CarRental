@@ -93,15 +93,6 @@
 }
 
 
-/* responsive */
-
-
-
-@media screen and (max-width: 768px) {
-    .parentRowHeading {
-        font-size: 54px;
-    }
-}
 
 /* About us */
 
@@ -140,7 +131,16 @@
 
 }
 
-/* //resposive */
+/* responsive */
+
+
+
+@media screen and (max-width: 768px) {
+    .parentRowHeading {
+        font-size: 54px;
+    }
+}
+
 
 @media screen and (max-width: 360px) {
     .aboutUs_title {

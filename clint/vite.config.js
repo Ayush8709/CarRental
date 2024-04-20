@@ -5,15 +5,16 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   server: {
     port: 3000,
-    proxy: {
-      '/api': {
-        target: 'https://carrental-tafi.onrender.com',
-        changeOrigin: true,
-        secure: false
-      },
-    },
+    // proxy: {
+    //   '/api': {
+    //     target: 'https://car-rental-kappa-hazel.vercel.app',
+    //     changeOrigin: true,
+    //     secure: false
+    //   },
+    // },
   },
   plugins: [react()],
 })
+//https://car-rental-kappa-hazel.vercel.app
 // https://carrental-tafi.onrender.com
 // http://localhost:8000

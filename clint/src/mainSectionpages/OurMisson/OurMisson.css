@@ -22,7 +22,6 @@
 /* //mobile responsive */
 @media screen and (max-width: 360px){
     .our_misson_carSection img{
-        /* border: 5px solid red; */
         height: 19pc;
 }
 
@@ -30,9 +29,7 @@
 
 }
 @media screen and (max-width: 992px){
-    .our_misson_post{
-       
-    }
+   
     .our_misson_heading{
         text-align: center;
         border-bottom: 1px solid black;

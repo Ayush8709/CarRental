@@ -24,7 +24,7 @@ const SignUp = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
         axios
-            .post('/api/v1/auth/register', { email, username, password })
+            .post('https://car-rental-kappa-hazel.vercel.app/api/v1/auth/register', { email, username, password })
             .then(() => {
                 alert('Registration Successful')
                 //   setEmail('')
@@ -34,10 +34,13 @@ const SignUp = () => {
                 navigate('/login')
             })
             .catch((error) => {
-                console.log('Unable to register user')
+                console.log('Registration Not Successful')
+                alert("Registration not Successful")
             })
 
     }
+
+  
 
     return (
         <>
@@ -49,12 +52,12 @@ const SignUp = () => {
                 <div className='col-md bg-dark text-white d-flex justify-content-center align-items-center'>
                     <form className='text-center  p-4 mb-5' onSubmit={handleSubmit} style={{ maxWidth: '600px', height: '400px' }}>
                         {/* Email Input */}
-                        <label htmlFor="email">Email</label>
+                        <label htmlFor="email" className='signUp_heading'>Email</label>
                         <br />
                         <input
                             id="email"
                             className='form-control mb-3 signUp_form_Input'
-                            type='text'
+                            type='email'
                             placeholder='Email'
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}

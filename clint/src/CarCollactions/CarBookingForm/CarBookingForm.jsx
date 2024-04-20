@@ -41,7 +41,7 @@ const CarBookingForm = () => {
     e.preventDefault();
 
     try {
-      await axios.post('/api/v1/usedetails/userdetail', details)
+      await axios.post('https://car-rental-kappa-hazel.vercel.app/api/v1/usedetails/userdetail', details)
       alert('Data Send Sussfully')
     } catch (error) {
       alert("Error Data Not Send")

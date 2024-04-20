@@ -9,16 +9,10 @@
     height: 33pc;
    
 }
-.rentalserviceFirstCol{
-    /* border: 1px solid gray; */
-    /* background-color: red; */
-}
+
 .rentalserviceFirstCol_image{
     width: 100%;
     height: -webkit-fill-available;;
-}
-.rentalserviceSecountCol{
-    /* border: 1px solid green; */
 }
 
 /* secound coloum section */
@@ -34,9 +28,7 @@
     font-family: auto;
     font-size: 3.2rem;
 }
-.rentalserviceSecountCol_first_paragraph{
 
-}
 
 .rentalserviceSecountCol_secound_row{
     /* border: 2px solid black; */
@@ -71,10 +63,8 @@
 @media screen and (max-width: 360px){
     .rentalserviceParent{
         height: 78pc;
-        /* background-color: red; */
           }
         .rentalserviceFirstRow{
-            /* background-color: red; */
             height: 74pc;
         }  
         .rentalserviceFirstCol_image{
@@ -91,10 +81,8 @@
 @media screen and (max-width:375px) {
     .rentalserviceParent{
         height: 78pc;
-        /* background-color: red; */
           }
         .rentalserviceFirstRow{
-            /* background-color: red; */
             height: 74pc;
         }  
 }
@@ -102,10 +90,8 @@
 @media screen and (max-width:425px) {
     .rentalserviceParent{
         height: 78pc;
-        /* background-color: red; */
           }
         .rentalserviceFirstRow{
-            /* background-color: red; */
             height: 74pc;
         }  
 }
@@ -113,24 +99,18 @@
 @media screen and (max-width:778px) {
     .rentalserviceParent{
         height: 78pc;
-        /* background-color: red; */
           }
         .rentalserviceFirstRow{
-            /* background-color: red; */
             height: 74pc;
         }  
-        .rentalserviceFirstCol_image{
-            
-        }
+     
 }
 
 @media screen and (max-width:1024px) {
     .rentalserviceParent{
         height: 78pc;
-        /* background-color: red; */
           }
         .rentalserviceFirstRow{
-            /* background-color: red; */
             height: 74pc;
         }  
 }

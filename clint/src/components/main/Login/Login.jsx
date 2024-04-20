@@ -23,17 +23,19 @@ const Login = () => {
     event.preventDefault();
     try {
       const response = await axios
-        .post('/api/v1/auth/login', { email, password })
+        .post('https://car-rental-kappa-hazel.vercel.app/api/v1/auth/login', { email, password })
       const token = response.data.token
-      alert('Login successful',"Email :-" ,email, "password :-" , password  )
       // setUsername('')
       // setPassword('')
       // fetchUsers();
       navigate('/')
       window.location.reload();
       localStorage.setItem('token', token)
+      alert("User Login")
+      console.log("User Login")
     } catch (error) {
-      console.log('Login Error', error)
+      console.log("User Not Login")
+      alert("User Not Login")
     }
   }
 
@@ -47,7 +49,7 @@ const Login = () => {
         <div className='col-md bg-dark text-white d-flex justify-content-center align-items-center' style={{ paddingBottom: '56px' }}>
           <form className='text-center  rounded-lg p-5 mb-1' onSubmit={handleLogin} style={{ maxWidth: '600px', height: '296px' }}>
             {/*Username Input */}
-            <label htmlFor="username">Email</label>
+            <label htmlFor="username" className='login_heading'>Email</label>
             <br />
             <input
               id="email"
@@ -59,7 +61,7 @@ const Login = () => {
 
             />
             {/* Password Input */}
-            <label htmlFor="password">Password</label>
+            <label htmlFor="password" className='login_heading'>Password</label>
             <br />
             {/* This input field contain two thing : input and icon and both field wrap with div */}
             <div className="input-group">

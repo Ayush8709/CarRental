@@ -1,10 +1,3 @@
-.parent {
-
-}
-
-.carChild {
-    /* border: 2px solid black; */
-}
 
 .AllCarsCard {
     /* border: 2px solid yellowgreen; */
@@ -15,10 +8,6 @@
     margin: 1px 0px;
 }
 
-.AllCarsCard:hover {
-    /* box-shadow: 0px 1px 11px 5px black; */
-
-}
 
 .AllCars_nameSection {
     display: flex;
@@ -30,9 +19,7 @@
     display: inline;
 }
 
-.AllCars_Price {
 
-}
 
 .AllCars_Price h2 {
     display: inline;
@@ -68,7 +55,7 @@
     font-family: auto;
 }
 
-.AllCars_FuelType {}
+
 
 .AllCars_FuelType p {
     display: inline;

@@ -1,7 +1,6 @@
 // This Components is Dieact link to app js in root folder
 import React, { useState } from 'react'
 import './ContactUs.css'
-import ContactjsMap from './contactUsMap/ContactjsMap'
 import { Link } from 'react-router-dom'
 import Login from '../components/main/Login/Login'
 import axios from 'axios'
@@ -45,7 +44,7 @@ const ContactUs = () => {
     const contactSaveData = async (e) => {
         e.preventDefault();
         try {
-            await axios.post('/api/v1/contact/contactus', contact)
+            await axios.post('https://car-rental-kappa-hazel.vercel.app/api/v1/contact/contactus', contact)
             alert("Conact save ")
         } catch (error) {
             alert('Contact Not Save')

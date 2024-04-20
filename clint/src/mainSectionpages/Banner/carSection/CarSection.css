@@ -1,9 +1,4 @@
-.carsectionparent{
-    /* border: 2px solid black; */
-}
-.carsectionChild{
-    /* border: 2px solid red; */
-}
+
 .carsectionpara{
     display: inline;
     font-weight: bold;
