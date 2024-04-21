@@ -39,7 +39,7 @@ app.use('/api/v1/usedetails', userDetails)
 
 //Default route
 app.get('/',(req, res)=>{
-    res.send("hello server")
+    res.send("hello Car Rental Web Site Server")
 })
 
 
