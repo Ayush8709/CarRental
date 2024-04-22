@@ -34,62 +34,102 @@ const Login = () => {
       alert("User Login")
       console.log("User Login")
     } catch (error) {
-      console.log("User Not Login")
-      alert("User Not Login")
+      console.log("Enter Valid Emal & Password")
+      alert("Enter Valid Emal & Password")
     }
   }
 
 
   return (
     <>
-      <div className='col-md d-flex font-weight-bold justify-content-center align-items-center   bg-dark'>
-        <h2 className='text-center display-4 text-white hello'>Login</h2>
-      </div>
-      <div className='container-fluid  bg-dark'>
-        <div className='col-md bg-dark text-white d-flex justify-content-center align-items-center' style={{ paddingBottom: '56px' }}>
-          <form className='text-center  rounded-lg p-5 mb-1' onSubmit={handleLogin} style={{ maxWidth: '600px', height: '296px' }}>
-            {/*Username Input */}
-            <label htmlFor="username" className='login_heading'>Email</label>
-            <br />
-            <input
-              id="email"
-              className='form-control mb-3 login_form_input'
-              type='text'
-              placeholder='Email'
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
+    
 
-            />
-            {/* Password Input */}
-            <label htmlFor="password" className='login_heading'>Password</label>
-            <br />
-            {/* This input field contain two thing : input and icon and both field wrap with div */}
-            <div className="input-group">
-              <input
-                id="password"
-                className='form-control mb-3 signUp_form_Input'
-                type={showpassword ? 'text' : 'password'}
-                placeholder='Password'
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-              />
-              <div className="input-group-prepend">
-                <span className="input-group-text" style={{ height: '2.4pc', cursor: "pointer" }} onClick={hindandshowpassword}>{showpassword ? <><MdRemoveRedEye /></> : <><FaEyeSlash /></>}
-                </span>
+
+
+      {/* next */}
+
+      <div className="container d-flex min-vh-100 justify-content-center align-items-center">
+        <div className="w-100" style={{ maxWidth: '400px' }}>
+        
+        
+
+          {/* Sign-in Form */}
+          <div className="card p-4">
+            <h2 className="text-center font-weight-bold mb-4">Login in to your account</h2>
+            <form onSubmit={handleLogin}>
+              {/* Email Input */}
+              <div className="form-group">
+                <label htmlFor="email">Email address</label>
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  autoComplete="email"
+                  className="form-control"
+                  required
+                />
               </div>
-            </div>
-
-
-
-            {/* Button */}
-            <button className='btn btn-primary btn-lg mb-3' type='submit' style={{ width: '200px', height: '50px', border: 'none', backgroundColor: '#0056b3', ':hover': { backgroundColor: '#004080' } }}>Login</button>
-            <br />
-            {/* <h4 className ="text-light text-center">New User</h4> */}
-            <button className="btn btn-lg btn-outline-primary"><Link to='/signup' style={{ textDecoration: 'none' }}>New User</Link></button>
-          </form>
-        </div>
-
+                <br />
+              {/* Password Input */}
+              <div className="form-group">
+      <div className="d-flex justify-content-between align-items-center">
+        <label htmlFor="password">Password</label>
+        <a href="#" className="text-decoration-none text-primary">
+          Forgot password?
+        </a>
       </div>
+      
+      <div className="input-group">
+        <input
+          type={showpassword ? 'text' : 'password'}
+          id="password"
+          name="password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          autoComplete="current-password"
+          className="form-control"
+          required
+        />
+        <div className="input-group-append">
+          <span
+            className="input-group-text"
+            style={{ height: '2.4pc', cursor: 'pointer' }}
+            onClick={hindandshowpassword}
+          >
+            {showpassword ? <MdRemoveRedEye /> : <FaEyeSlash />}
+          </span>
+        </div>
+      </div>
+    </div>
+                <br />
+                <br />
+              {/* Sign-in Button */}
+              <div className="form-group">
+                <button type="submit" className="btn btn-primary w-100">
+                  Log in
+                </button>
+              </div>
+            </form>
+          </div>
+
+          {/* Sign-up Link */}
+          <p className="text-center text-muted mt-4">
+            Not a member?{' '}
+            <Link to='/signup' className="text-decoration-none text-primary">
+             New Registration Now
+            </Link>
+          </p>
+        </div>
+      </div>
+
+
+
+
+
+
+
 
     </>
   )

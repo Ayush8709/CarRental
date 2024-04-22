@@ -1,4 +1,4 @@
- 
+/*  
  .login_heading{
     color: red;
     font-family: cursive;
@@ -34,4 +34,4 @@
  }
 
 
-  /* style={{ width: '400px', height: '40px', borderRadius: '20px', backgroundColor: '#ccc', padding: '10px' }} */
+  style={{ width: '400px', height: '40px', borderRadius: '20px', backgroundColor: '#ccc', padding: '10px' }} */
