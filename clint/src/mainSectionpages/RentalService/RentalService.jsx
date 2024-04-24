@@ -15,7 +15,7 @@ const RentalService = () => {
           <div className="row mt-5  rentalserviceFirstRow">
             {/* this is my main first coloum */}
             <div className="col-sm-5 rentalserviceFirstCol">
-              <img src={carService} className="rentalserviceFirstCol_image" alt="" width='100%'/>
+              <img src="https://i.pinimg.com/564x/09/eb/34/09eb3453e3e8ba18faff2bfff4fab39d.jpg" className="rentalserviceFirstCol_image" alt="" width='100%'/>
             </div>
 
             {/* this is my main secound coloum */}

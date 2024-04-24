@@ -45,8 +45,8 @@ const OurMisson = () => {
                 </div>
 
                 <div className="col-sm-6 col-md-6 mt-5 mb-5 our_misson_carSection">
-                        <img width="100%" src=
-                        {ourmissonimg}alt="" className='ourMissonImg'/>
+                        
+                     <img width="100%" src="https://imgs.search.brave.com/dm235F1ntftSUuunoA_UcBqvC9S3cZFr2YWI6cRvLKU/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJhY2Nlc3Mu/Y29tL2Z1bGwvOTQz/NjkuanBn" alt="" className='ourMissonImg'/>
                       
                 </div>
             </div>
