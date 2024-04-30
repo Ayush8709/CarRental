@@ -3,20 +3,9 @@ import './AllCar.css'
 
 import axios from 'axios'
 import { Link } from 'react-router-dom'
-
-
-
-
 const AllCars = () => {
- 
-   
-
-   
-
-
-    const [carApi, setCarApi] = useState([]);
-
-   
+     const [carApi, setCarApi] = useState([]);
+  
     //Fetch all Car Api with backend
     const myCarApi = async () => {
         try {
@@ -27,18 +16,9 @@ const AllCars = () => {
             console.log("All Car Api Not Found");
         }
     }
-
     useEffect(() => {
         myCarApi()
-       
-       
     })
-
-
-
-  
-
-
     return (
         <>
             <div className="container-fluid parent mt-5">
