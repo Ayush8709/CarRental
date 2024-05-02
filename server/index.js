@@ -28,6 +28,11 @@ app.use('/api/v1/auth',register)
 import carApi from './routes/carDataRoutes.js';
 app.use('/api/v1/cardata',carApi)
 
+//Get user
+import getUserData from './routes/getUsersDetailsRoute.js'
+app.use('/api/v1/getuserdata', getUserData)
+
+
 
 //ContactUs Route
 import ContactUs from './routes/contactRoutes.js'
