@@ -13,6 +13,7 @@ import SignUp from './components/main/SignUp/SignUp'
 import Login from './components/main/Login/Login'
 import CarChekoutPage from './CarCollactions/CarChekOut/ChekOut'
 import CarBookingForm from './CarCollactions/CarBookingForm/CarBookingForm'
+import User from './User/User'
 
 const App = () => {
   const isUserSignedIn = !!localStorage.getItem('token')
@@ -33,6 +34,7 @@ const App = () => {
           <Route path='/signup' element={<SignUp />} />
           <Route path='/login' element={<Login />} />
           <Route path='/carbookingform' element={<CarBookingForm />} />
+          <Route path='/user' element={< User />} />
 
 
 

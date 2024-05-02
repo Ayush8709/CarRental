@@ -79,6 +79,10 @@ const Navbar = () => {
                   <li className="nav-item">
                     {/* <Link className="nav-link active navbar_link_gsap" onClick={handleSignOut}  style={myStyle} >Sign Out</Link> */}
                     <button onClick={handleSignOut} className='btn btn-outline-light bg-dark text-light mt-2'>Sign Out</button>
+                    
+                  </li>
+                  <li>
+                  <Link className="nav-link active navbar_link_gsap" style={myStyle} to="/user">User</Link>
                   </li>
                 </>
                 :
