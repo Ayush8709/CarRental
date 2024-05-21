@@ -1,65 +1,71 @@
-import React, { useState, useEffect } from 'react'
-import { useNavigate } from 'react-router-dom'
-import axios from 'axios'
-import './SignUp.css'
-import {Link} from 'react-router-dom'
-//eye icon
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
+import './SignUp.css';
+import { Link } from 'react-router-dom';
+// eye icon
 import { MdRemoveRedEye } from "react-icons/md";
 import { FaEyeSlash } from "react-icons/fa6";
 
 const SignUp = () => {
-    const [email, setEmail] = useState('')
-    const [username, setUsername] = useState('')
-    const [password, setPassword] = useState('')
+    const [email, setEmail] = useState('');
+    const [username, setUsername] = useState('');
+    const [password, setPassword] = useState('');
+    const [success, setSuccess] = useState('');
+    const [error, setError] = useState('');
+    const [loading, setLoading] = useState(false);
     const navigate = useNavigate();
 
-    //Password Hide and show funcanality
-    // const [hidepassword, setHidepassword]= useState('');
-    const [showpassword, setShowpassword] = useState(false);
-    const hindandshowpassword = () => {
-        setShowpassword(!showpassword);
-    }
+    // Password hide and show functionality
+    const [showPassword, setShowPassword] = useState(false);
+    const handleShowPassword = () => {
+        setShowPassword(!showPassword);
+    };
 
-
-
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
         event.preventDefault();
-        axios
-            .post('https://car-rental-gold-gamma.vercel.app/api/v1/auth/register', { email, username, password })
-            .then(() => {
-                alert('Registration Successful')
-                //   setEmail('')
-                //   setUsername('')
-                //   setPassword('')
-                navigate('/login')
-            })
-            .catch((error) => {
-                console.log('User Already Register')
-                alert("User Already Register")
-            })
+        setLoading(true);
+        setError('');
+        setSuccess('');
 
-    }
-
-
+        try {
+            const response = await axios.post('https://car-rental-gold-gamma.vercel.app/api/v1/auth/register', { email, username, password });
+            if (response.status === 201) {
+                setSuccess('Registration Successful');
+                alert('Registration Successful');
+                setEmail('');
+                setUsername('');
+                setPassword('');
+                navigate('/login');
+            } else {
+                setError(response.data.message);
+            }
+        } catch (error) {
+            if (error.response) {
+                setError(error.response.data.message || 'User Already Registered');
+            } else if (error.request) {
+                setError('No response from server. Please try again later.');
+            } else {
+                setError('An error occurred. Please try again.');
+            }
+        } finally {
+            setLoading(false);
+        }
+    };
 
     return (
         <>
-            {/* new */}
-
             <div className="container d-flex min-vh-100 justify-content-center align-items-center">
                 <div className="w-100" style={{ maxWidth: '400px' }}>
-
-
-
-                    {/* Sign-in Form */}
                     <div className="card p-4">
-                        <h2 className="text-center font-weight-bold mb-4">Sigup  to your account</h2>
+                        <h2 className="text-center font-weight-bold mb-4">Signup to your account</h2>
+                        {error && <div className="alert alert-danger">{error}</div>}
+                        {success && <div className="alert alert-success">{success}</div>}
                         <form onSubmit={handleSubmit}>
-                            {/* Email Input */}
                             <div className="form-group">
                                 <label htmlFor="email">Email address</label>
                                 <input
-                                    type="text"
+                                    type="email"
                                     id="email"
                                     name="email"
                                     value={email}
@@ -70,33 +76,27 @@ const SignUp = () => {
                                 />
                             </div>
                             <br />
-                            {/* UserName Input */}
                             <div className="form-group">
-                                <label htmlFor="email">User Name</label>
+                                <label htmlFor="username">User Name</label>
                                 <input
                                     type="text"
                                     id="username"
-                                    name="email"
+                                    name="username"
                                     value={username}
-                            onChange={(e) => setUsername(e.target.value)}
-                                    autoComplete="email"
+                                    onChange={(e) => setUsername(e.target.value)}
+                                    autoComplete="username"
                                     className="form-control"
                                     required
                                 />
                             </div>
                             <br />
-                            {/* Password Input */}
                             <div className="form-group">
                                 <div className="d-flex justify-content-between align-items-center">
                                     <label htmlFor="password">Password</label>
-                                    {/* <a href="#" className="text-decoration-none text-primary">
-                                        Forgot password?
-                                    </a> */}
                                 </div>
-
                                 <div className="input-group">
                                     <input
-                                        type={showpassword ? 'text' : 'password'}
+                                        type={showPassword ? 'text' : 'password'}
                                         id="password"
                                         name="password"
                                         value={password}
@@ -109,36 +109,32 @@ const SignUp = () => {
                                         <span
                                             className="input-group-text"
                                             style={{ height: '2.4pc', cursor: 'pointer' }}
-                                            onClick={hindandshowpassword}
+                                            onClick={handleShowPassword}
                                         >
-                                            {showpassword ? <MdRemoveRedEye /> : <FaEyeSlash />}
+                                            {showPassword ? <MdRemoveRedEye /> : <FaEyeSlash />}
                                         </span>
                                     </div>
                                 </div>
                             </div>
                             <br />
                             <br />
-                            {/* Sign-in Button */}
                             <div className="form-group">
-                                <button type="submit" className="btn btn-primary w-100">
-                                    Sign Up
+                                <button type="submit" className="btn btn-primary w-100" disabled={loading}>
+                                    {loading ? 'Signing Up...' : 'Sign Up'}
                                 </button>
                             </div>
                         </form>
+                        <p className="text-center text-muted mt-4">
+                            Not a member?{' '}
+                            <Link to='/login' className="text-decoration-none text-primary">
+                                Already Registered
+                            </Link>
+                        </p>
                     </div>
-
-                    {/* Sign-up Link */}
-                    <p className="text-center text-muted mt-4">
-                        Not a member?{' '}
-                        <Link to='/login' className="text-decoration-none text-primary">
-                            Already Registered
-                        </Link>
-                    </p>
                 </div>
             </div>
-
         </>
-    )
-}
+    );
+};
 
-export default SignUp
+export default SignUp;

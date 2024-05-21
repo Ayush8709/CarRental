@@ -72,7 +72,7 @@ const loginController = async (req, res) => {
 
         //jwt token create
         const token = JWT.sign({ id: user._id }, JWT_KEY, {
-            expiresIn: "7d",
+            expiresIn: "1d",
         })
         res.status(200).send({
             success: true,
