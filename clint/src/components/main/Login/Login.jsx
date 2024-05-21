@@ -23,7 +23,7 @@ const Login = () => {
     event.preventDefault();
     try {
       const response = await axios
-        .post('https://car-rental-kappa-hazel.vercel.app/api/v1/auth/login', { email, password })
+        .post('https://car-rental-gold-gamma.vercel.app/api/v1/auth/login', { email, password })
       const token = response.data.token
       // setUsername('')
       // setPassword('')
@@ -42,7 +42,7 @@ const Login = () => {
 
   return (
     <>
-    
+
 
 
 
@@ -50,8 +50,8 @@ const Login = () => {
 
       <div className="container d-flex min-vh-100 justify-content-center align-items-center">
         <div className="w-100" style={{ maxWidth: '400px' }}>
-        
-        
+
+
 
           {/* Sign-in Form */}
           <div className="card p-4">
@@ -71,40 +71,40 @@ const Login = () => {
                   required
                 />
               </div>
-                <br />
+              <br />
               {/* Password Input */}
               <div className="form-group">
-      <div className="d-flex justify-content-between align-items-center">
-        <label htmlFor="password">Password</label>
-        <a href="#" className="text-decoration-none text-primary">
-          Forgot password?
-        </a>
-      </div>
-      
-      <div className="input-group">
-        <input
-          type={showpassword ? 'text' : 'password'}
-          id="password"
-          name="password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          autoComplete="current-password"
-          className="form-control"
-          required
-        />
-        <div className="input-group-append">
-          <span
-            className="input-group-text"
-            style={{ height: '2.4pc', cursor: 'pointer' }}
-            onClick={hindandshowpassword}
-          >
-            {showpassword ? <MdRemoveRedEye /> : <FaEyeSlash />}
-          </span>
-        </div>
-      </div>
-    </div>
-                <br />
-                <br />
+                <div className="d-flex justify-content-between align-items-center">
+                  <label htmlFor="password">Password</label>
+                  <a href="#" className="text-decoration-none text-primary">
+                    Forgot password?
+                  </a>
+                </div>
+
+                <div className="input-group">
+                  <input
+                    type={showpassword ? 'text' : 'password'}
+                    id="password"
+                    name="password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    autoComplete="current-password"
+                    className="form-control"
+                    required
+                  />
+                  <div className="input-group-append">
+                    <span
+                      className="input-group-text"
+                      style={{ height: '2.4pc', cursor: 'pointer' }}
+                      onClick={hindandshowpassword}
+                    >
+                      {showpassword ? <MdRemoveRedEye /> : <FaEyeSlash />}
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <br />
+              <br />
               {/* Sign-in Button */}
               <div className="form-group">
                 <button type="submit" className="btn btn-primary w-100">
@@ -118,7 +118,7 @@ const Login = () => {
           <p className="text-center text-muted mt-4">
             Not a member?{' '}
             <Link to='/signup' className="text-decoration-none text-primary">
-             New Registration Now
+              New Registration Now
             </Link>
           </p>
         </div>

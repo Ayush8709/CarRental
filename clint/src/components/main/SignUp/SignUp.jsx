@@ -25,7 +25,7 @@ const SignUp = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
         axios
-            .post('https://car-rental-kappa-hazel.vercel.app/api/v1/auth/register', { email, username, password })
+            .post('https://car-rental-gold-gamma.vercel.app/api/v1/auth/register', { email, username, password })
             .then(() => {
                 alert('Registration Successful')
                 //   setEmail('')

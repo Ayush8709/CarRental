@@ -58,7 +58,7 @@ const User = () => {
     const helloData = async () => {
         try {
           // const response = await authAxios.get('http://localhost:8000/api/v1/getuserdata/getuser')
-            const response = await authAxios.get('https://car-rental-kappa-hazel.vercel.app/api/v1/getuserdata/getuser');
+            const response = await authAxios.get('https://car-rental-gold-gamma.vercel.app/api/v1/getuserdata/getuser');
             setData(response.data);
             console.log("Fetch successful");
         } catch (error) {

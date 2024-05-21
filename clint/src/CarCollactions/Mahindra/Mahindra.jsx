@@ -14,7 +14,7 @@ const Mahindra = () => {
     //Fetch all Car Api with backend
     const myCarApi = async () => {
         try {
-            const myCarApiDetail = await axios.get('https://car-rental-kappa-hazel.vercel.app/api/v1/cardata/mahindradata')
+            const myCarApiDetail = await axios.get('https://car-rental-gold-gamma.vercel.app/api/v1/cardata/mahindradata')
             setCarApi(myCarApiDetail.data)
             //   console.log(carApi);
         } catch (error) {

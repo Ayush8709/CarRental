@@ -44,7 +44,7 @@ const ContactUs = () => {
     const contactSaveData = async (e) => {
         e.preventDefault();
         try {
-            await axios.post('https://car-rental-kappa-hazel.vercel.app/api/v1/contact/contactus', contact)
+            await axios.post('https://car-rental-gold-gamma.vercel.app/api/v1/contact/contactus', contact)
             alert("Conact save ")
         } catch (error) {
             alert('Contact Not Save')
