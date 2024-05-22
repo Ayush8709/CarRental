@@ -1,25 +1,24 @@
-import React, { useState, useEffect } from 'react'
-import axios from 'axios'
-import { useParams } from 'react-router-dom'
-// const singleData = await axios.get(`http://localhost:8000/api/v1/cardata//cardetail/${id}`)
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import { useParams } from 'react-router-dom';
+import './CarDetilsImage.css'
 
-
-const CarDetiils = () => {
-    const [single, setSignle] = useState({})
-    const { id } = useParams()
+const CarDetails = () => {
+    const [single, setSingle] = useState({});
+    const { id } = useParams();
 
     const mySingleData = async () => {
         try {
-            const myData = await axios.get(`https://car-rental-gold-gamma.vercel.app/api/v1/cardata/cardetail/${id}`)
-            setSignle(myData.data)
+            const myData = await axios.get(`https://car-rental-gold-gamma.vercel.app/api/v1/cardata/cardetail/${id}`);
+            setSingle(myData.data);
         } catch (error) {
-
+            console.error('Error fetching car data', error);
         }
-    }
+    };
 
     useEffect(() => {
-        mySingleData()
-    })
+        mySingleData();
+    }, [id]);
 
     return (
         <>
@@ -27,13 +26,13 @@ const CarDetiils = () => {
                 <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
                     <div className="carousel-inner">
                         <div className="carousel-item active">
-                            <img src={single.image} className="d-block w-100" alt="..." />
+                            <img src={single.image} className="d-block w-100 checkout_images" alt="..." />
                         </div>
                         <div className="carousel-item">
-                            <img src={single.image} className="d-block w-100" alt="..." />
+                            <img src={single.image} className="d-block w-100 checkout_images" alt="..." />
                         </div>
                         <div className="carousel-item">
-                            <img src={single.image} className="d-block w-100" alt="..." />
+                            <img src={single.image} className="d-block w-100 checkout_images" alt="..." />
                         </div>
                     </div>
                     <button className="carousel-control-prev text-light" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
@@ -45,10 +44,16 @@ const CarDetiils = () => {
                         <span className="visually-hidden">Next</span>
                     </button>
                 </div>
-                <p style={{fontSize:'25px', textAlign:'center' , color:'black'}}>{single.description}</p>
+                <div className="row justify-content-center">
+                    <div className="col-12 col-md-10 col-lg-8">
+                        <p className="mt-4 mb-4 text-center text-dark image_description_checkout" >
+                            {single.description}
+                        </p>
+                    </div>
+                </div>
             </div>
         </>
-    )
-}
+    );
+};
 
-export default CarDetiils
+export default CarDetails;
