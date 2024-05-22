@@ -13,13 +13,15 @@ import SignUp from './components/main/SignUp/SignUp'
 import Login from './components/main/Login/Login'
 import CarChekoutPage from './CarCollactions/CarChekOut/ChekOut'
 import CarBookingForm from './CarCollactions/CarBookingForm/CarBookingForm'
-import User from './User/User'
+import {UserProvider } from './UserContext/UserContext'
+import User from './User'
 
 const App = () => {
   const isUserSignedIn = !!localStorage.getItem('token')
   console.log(isUserSignedIn)
   return (
     <>
+    <UserProvider >
       <Router>
         <Navbar />
         <Routes>
@@ -34,7 +36,7 @@ const App = () => {
           <Route path='/signup' element={<SignUp />} />
           <Route path='/login' element={<Login />} />
           <Route path='/carbookingform' element={<CarBookingForm />} />
-          <Route path='/user' element={< User />} />
+          <Route path='/user' element={<User />} />
 
 
 
@@ -46,29 +48,12 @@ const App = () => {
         </Routes>
         <Footer />
       </Router>
+      </UserProvider>
     </>
   )
 }
 
 export default App
 
-// import React from 'react';
-// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-// import NotFoundPage from './components/main/NotFound'
-
-// const App = () => {
-//   return (
-//     <Router>
-//       <Routes>
-//         <Route path='/navbar' element={<Navbar/>} exact />
-//         <Route path='/' element={<Main />} exact />
-//         {/* 404 - Page Not Found */}
-//         <Route path="*" element={<NotFoundPage />} />
-//       </Routes>
-//     </Router>
-//   );
-// };
-
-// export default App;
 
